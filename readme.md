@@ -11,18 +11,20 @@
 	<br>
 </div>
 
-> React for CLIs. Build and test your CLI output using components.
+中文 · [English](./readme_en.md)
+
+> 面向 CLI 的 React。使用组件来构建并测试你的命令行输出。
 
 [![Build Status](https://github.com/vadimdemedes/ink/workflows/test/badge.svg)](https://github.com/vadimdemedes/ink/actions)
 [![npm](https://img.shields.io/npm/dm/ink?logo=npm)](https://npmjs.com/package/ink)
 
-Ink provides the same component-based UI building experience that React offers in the browser, but for command-line apps.
-It uses [Yoga](https://github.com/facebook/yoga) to build Flexbox layouts in the terminal, so most CSS-like properties are available in Ink as well.
-If you are already familiar with React, you already know Ink.
+Ink 为命令行应用提供了与 React 在浏览器中相同的组件化 UI 构建体验。
+它使用 [Yoga](https://github.com/facebook/yoga) 在终端中构建 Flexbox 布局，因此大多数类 CSS 属性在 Ink 中同样可用。
+如果你已经熟悉 React，那你其实已经会用 Ink 了。
 
-Since Ink is a React renderer, all features of React are supported.
-Head over to the [React](https://reactjs.org) website for documentation on how to use it.
-Only Ink's methods are documented in this readme.
+由于 Ink 是一个 React 渲染器，React 的所有特性都可以使用。
+React 的使用方式请参考 [React](https://reactjs.org) 官方文档。
+本文档仅记录 Ink 自身的方法。
 
 ---
 
@@ -30,7 +32,7 @@ Only Ink's methods are documented in this readme.
 	<p>
 		<p>
 			<sup>
-				<a href="https://opencollective.com/vadimdemedes">My open source work is supported by the community ❤️</a>
+				<a href="https://opencollective.com/vadimdemedes">我的开源工作由社区支持 ❤️</a>
 			</sup>
 		</p>
 	</p>
@@ -43,7 +45,7 @@ npm install ink react
 ```
 
 > [!NOTE]
-> This readme documents the upcoming version of Ink. For the latest stable release, see [Ink on npm](https://www.npmjs.com/package/ink).
+> 本 README 记录的是 Ink 即将发布的版本。最新稳定版请查看 [Ink on npm](https://www.npmjs.com/package/ink)。
 
 ## Usage
 
@@ -74,63 +76,63 @@ render(<Counter />);
 
 ## Who's Using Ink?
 
-- [Claude Code](https://github.com/anthropics/claude-code) - An agentic coding tool made by Anthropic.
-- [Gemini CLI](https://github.com/google-gemini/gemini-cli) - An agentic coding tool made by Google.
-- [GitHub Copilot CLI](https://github.com/features/copilot/cli) - Just say what you want the shell to do.
-- [Canva CLI](https://www.canva.dev/docs/apps/canva-cli/) - CLI for creating and managing Canva Apps.
-- [Cloudflare's Wrangler](https://github.com/cloudflare/wrangler2) - The CLI for Cloudflare Workers.
-- [Linear](https://linear.app) - Linear built an internal CLI for managing deployments, configs, and other housekeeping tasks.
-- [Gatsby](https://www.gatsbyjs.org) - Gatsby is a modern web framework for blazing-fast websites.
-- [tap](https://node-tap.org) - A Test-Anything-Protocol library for JavaScript.
-- [Terraform CDK](https://github.com/hashicorp/terraform-cdk) - Cloud Development Kit (CDK) for HashiCorp Terraform.
-- [Specify CLI](https://specifyapp.com) - Automate the distribution of your design tokens.
-- [Twilio's SIGNAL](https://github.com/twilio-labs/plugin-signal2020) - CLI for Twilio's SIGNAL conference. [Blog post](https://www.twilio.com/blog/building-conference-cli-in-react).
-- [Typewriter](https://github.com/segmentio/typewriter) - Generates strongly-typed [Segment](https://segment.com) analytics clients from arbitrary JSON Schema.
-- [Prisma](https://www.prisma.io) - The unified data layer for modern applications.
-- [Blitz](https://blitzjs.com) - The Fullstack React Framework.
-- [New York Times](https://github.com/nytimes/kyt) - NYT uses Ink's `kyt` - a toolkit that encapsulates and manages the configuration for web apps.
-- [tink](https://github.com/npm/tink) - A next-generation runtime and package manager.
-- [Inkle](https://github.com/jrr/inkle) - A Wordle game.
-- [loki](https://github.com/oblador/loki) - Visual regression testing tool for Storybook.
-- [Bit](https://github.com/teambit/bit) - Build, distribute, and collaborate on components.
-- [Remirror](https://github.com/remirror/remirror) - Your friendly, world-class editor toolkit.
-- [Prime](https://github.com/birkir/prime) - Open-source GraphQL CMS.
-- [emoj](https://github.com/sindresorhus/emoj) - Find relevant emojis.
-- [emma](https://github.com/maticzav/emma-cli) - Find and install npm packages easily.
-- [npm-check-extras](https://github.com/akgondber/npm-check-extras) - Check for outdated and unused dependencies, and run update/delete actions on selected ones.
-- [swiff](https://github.com/simple-integrated-marketing/swiff) - Multi-environment command-line tools for time-saving web developers.
-- [share](https://github.com/marionebl/share-cli) - Share files quickly.
-- [Kubelive](https://github.com/ameerthehacker/kubelive) - A CLI for Kubernetes that provides live data about the cluster and its resources.
-- [changelog-view](https://github.com/jdeniau/changelog-view) - View changelogs.
-- [cfpush](https://github.com/mamachanko/cfpush) - Interactive Cloud Foundry tutorial.
-- [startd](https://github.com/mgrip/startd) - Turn your React component into a web app.
-- [wiki-cli](https://github.com/hexrcs/wiki-cli) - Search Wikipedia and read article summaries.
-- [garson](https://github.com/goliney/garson) - Build interactive, config-based command-line interfaces.
-- [git-contrib-calendar](https://github.com/giannisp/git-contrib-calendar) - Display a contributions calendar for any Git repository.
-- [gitgud](https://github.com/GitGud-org/GitGud) - Interactive command-line GUI for Git.
-- [Autarky](https://github.com/pranshuchittora/autarky) - Find and delete old `node_modules` directories to free up disk space.
-- [fast-cli](https://github.com/sindresorhus/fast-cli) - Test your download and upload speeds.
-- [tasuku](https://github.com/privatenumber/tasuku) - Minimal task runner.
-- [mnswpr](https://github.com/mordv/mnswpr) - A Minesweeper game.
-- [lrn](https://github.com/krychu/lrn) - Learning by repetition.
-- [turdle](https://github.com/mynameisankit/turdle) - A Wordle game.
-- [Shopify CLI](https://github.com/Shopify/cli) - Build apps, themes, and storefronts for the Shopify platform.
-- [ToDesktop CLI](https://www.todesktop.com/electron) - All-in-one platform for building Electron apps.
-- [Walle](https://github.com/Pobepto/walle) - A full-featured crypto wallet for EVM networks.
-- [Sudoku](https://github.com/mrozio13pl/sudoku-in-terminal) - A Sudoku game.
-- [Sea Trader](https://github.com/zyishai/sea-trader) - A Taipan!-inspired trading simulator game.
-- [srtd](https://github.com/t1mmen/srtd) - Live-reloading SQL templates for Supabase projects.
-- [tweakcc](https://github.com/Piebald-AI/tweakcc) - Customize your Claude Code styling.
-- [argonaut](https://github.com/darksworm/argonaut) - Manage Argo CD resources.
-- [Qodo Command](https://github.com/qodo-ai/command) - Build, run, and manage AI agents.
-- [Nanocoder](https://github.com/nano-collective/nanocoder) - A community-built, local-first AI coding agent with multi-provider support.
-- [dev3000](https://github.com/vercel-labs/dev3000) - An AI agent MCP orchestrator and developer browser.
-- [Neovate Code](https://github.com/neovateai/neovate-code) - An agentic coding tool made by AntGroup.
-- [instagram-cli](https://github.com/supreme-gg-gg/instagram-cli) - Instagram client.
-- [ElevenLabs CLI](https://github.com/elevenlabs/cli) - ElevenLabs agents client.
-- [SSH AI Chat](https://github.com/miantiao-me/ssh-ai-chat) - Chat with AI over SSH.
+- [Claude Code](https://github.com/anthropics/claude-code) - Anthropic 打造的代理式编码工具。
+- [Gemini CLI](https://github.com/google-gemini/gemini-cli) - Google 打造的代理式编码工具。
+- [GitHub Copilot CLI](https://github.com/features/copilot/cli) - 只要说出你想让 shell 做什么。
+- [Canva CLI](https://www.canva.dev/docs/apps/canva-cli/) - 用于创建和管理 Canva Apps 的 CLI。
+- [Cloudflare's Wrangler](https://github.com/cloudflare/wrangler2) - Cloudflare Workers 的 CLI。
+- [Linear](https://linear.app) - Linear 为部署、配置和其他日常维护打造的内部 CLI。
+- [Gatsby](https://www.gatsbyjs.org) - 面向极速网站的现代 Web 框架。
+- [tap](https://node-tap.org) - JavaScript 的 Test Anything Protocol 库。
+- [Terraform CDK](https://github.com/hashicorp/terraform-cdk) - HashiCorp Terraform 的云开发工具包（CDK）。
+- [Specify CLI](https://specifyapp.com) - 自动化分发设计令牌（design tokens）。
+- [Twilio's SIGNAL](https://github.com/twilio-labs/plugin-signal2020) - Twilio SIGNAL 大会 CLI。[博客](https://www.twilio.com/blog/building-conference-cli-in-react)。
+- [Typewriter](https://github.com/segmentio/typewriter) - 从任意 JSON Schema 生成强类型 [Segment](https://segment.com) 分析客户端。
+- [Prisma](https://www.prisma.io) - 现代应用统一数据层。
+- [Blitz](https://blitzjs.com) - 全栈 React 框架。
+- [New York Times](https://github.com/nytimes/kyt) - NYT 在其 `kyt`（封装并管理 Web 应用配置的工具包）中使用 Ink。
+- [tink](https://github.com/npm/tink) - 新一代运行时和包管理器。
+- [Inkle](https://github.com/jrr/inkle) - 一个 Wordle 游戏。
+- [loki](https://github.com/oblador/loki) - Storybook 视觉回归测试工具。
+- [Bit](https://github.com/teambit/bit) - 构建、分发并协作组件。
+- [Remirror](https://github.com/remirror/remirror) - 友好的世界级编辑器工具集。
+- [Prime](https://github.com/birkir/prime) - 开源 GraphQL CMS。
+- [emoj](https://github.com/sindresorhus/emoj) - 查找相关 emoji。
+- [emma](https://github.com/maticzav/emma-cli) - 轻松查找并安装 npm 包。
+- [npm-check-extras](https://github.com/akgondber/npm-check-extras) - 检查过期和未使用依赖，并对选中项执行更新/删除。
+- [swiff](https://github.com/simple-integrated-marketing/swiff) - 面向 Web 开发者的多环境省时命令行工具。
+- [share](https://github.com/marionebl/share-cli) - 快速分享文件。
+- [Kubelive](https://github.com/ameerthehacker/kubelive) - Kubernetes CLI，提供集群及资源的实时数据。
+- [changelog-view](https://github.com/jdeniau/changelog-view) - 查看更新日志。
+- [cfpush](https://github.com/mamachanko/cfpush) - 交互式 Cloud Foundry 教程。
+- [startd](https://github.com/mgrip/startd) - 将 React 组件变成 Web 应用。
+- [wiki-cli](https://github.com/hexrcs/wiki-cli) - 搜索维基百科并阅读条目摘要。
+- [garson](https://github.com/goliney/garson) - 构建交互式、配置驱动的命令行界面。
+- [git-contrib-calendar](https://github.com/giannisp/git-contrib-calendar) - 显示任意 Git 仓库的贡献日历。
+- [gitgud](https://github.com/GitGud-org/GitGud) - Git 交互式命令行 GUI。
+- [Autarky](https://github.com/pranshuchittora/autarky) - 查找并删除旧的 `node_modules` 目录以释放磁盘空间。
+- [fast-cli](https://github.com/sindresorhus/fast-cli) - 测试下载与上传速度。
+- [tasuku](https://github.com/privatenumber/tasuku) - 极简任务运行器。
+- [mnswpr](https://github.com/mordv/mnswpr) - 扫雷游戏。
+- [lrn](https://github.com/krychu/lrn) - 重复记忆学习工具。
+- [turdle](https://github.com/mynameisankit/turdle) - 一个 Wordle 游戏。
+- [Shopify CLI](https://github.com/Shopify/cli) - 为 Shopify 平台构建应用、主题和店面。
+- [ToDesktop CLI](https://www.todesktop.com/electron) - 构建 Electron 应用的一体化平台。
+- [Walle](https://github.com/Pobepto/walle) - 面向 EVM 网络的全功能加密钱包。
+- [Sudoku](https://github.com/mrozio13pl/sudoku-in-terminal) - 数独游戏。
+- [Sea Trader](https://github.com/zyishai/sea-trader) - 受 Taipan! 启发的贸易模拟游戏。
+- [srtd](https://github.com/t1mmen/srtd) - Supabase 项目的 SQL 模板实时重载工具。
+- [tweakcc](https://github.com/Piebald-AI/tweakcc) - 自定义 Claude Code 样式。
+- [argonaut](https://github.com/darksworm/argonaut) - 管理 Argo CD 资源。
+- [Qodo Command](https://github.com/qodo-ai/command) - 构建、运行和管理 AI 代理。
+- [Nanocoder](https://github.com/nano-collective/nanocoder) - 社区构建的本地优先 AI 编码代理，支持多提供方。
+- [dev3000](https://github.com/vercel-labs/dev3000) - AI 代理 MCP 编排器与开发者浏览器。
+- [Neovate Code](https://github.com/neovateai/neovate-code) - AntGroup 打造的代理式编码工具。
+- [instagram-cli](https://github.com/supreme-gg-gg/instagram-cli) - Instagram 客户端。
+- [ElevenLabs CLI](https://github.com/elevenlabs/cli) - ElevenLabs agents 客户端。
+- [SSH AI Chat](https://github.com/miantiao-me/ssh-ai-chat) - 通过 SSH 与 AI 对话。
 
-_(PRs welcome. Append new entries at the end. Repos must have 100+ stars and showcase Ink beyond a basic list picker.)_
+_(欢迎 PR。请在末尾追加新条目。仓库需 100+ stars，并且要展示 Ink 超越基础列表选择器的用法。)_
 
 ## Contents
 
@@ -167,24 +169,24 @@ _(PRs welcome. Append new entries at the end. Repos must have 100+ stars and sho
 
 ## Getting Started
 
-Use [create-ink-app](https://github.com/vadimdemedes/create-ink-app) to quickly scaffold a new Ink-based CLI.
+使用 [create-ink-app](https://github.com/vadimdemedes/create-ink-app) 可以快速搭建一个基于 Ink 的 CLI。
 
 ```sh
 npx create-ink-app my-ink-cli
 ```
 
-Alternatively, create a TypeScript project:
+或者创建一个 TypeScript 项目：
 
 ```sh
 npx create-ink-app --typescript my-ink-cli
 ```
 
-<details><summary>Manual JavaScript setup</summary>
+<details><summary>手动 JavaScript 配置</summary>
 <p>
-Ink requires the same Babel setup as you would do for regular React-based apps in the browser.
+Ink 需要与你在浏览器 React 应用中相同的 Babel 配置。
 
-Set up Babel with a React preset to ensure all examples in this readme work as expected.
-After [installing Babel](https://babeljs.io/docs/en/usage), install `@babel/preset-react` and insert the following configuration in `babel.config.json`:
+请使用 React preset 配置 Babel，以确保本 README 中的示例都能正常工作。
+在 [安装 Babel](https://babeljs.io/docs/en/usage) 后，安装 `@babel/preset-react`，并在 `babel.config.json` 中加入以下配置：
 
 ```sh
 npm install --save-dev @babel/preset-react
@@ -196,7 +198,7 @@ npm install --save-dev @babel/preset-react
 }
 ```
 
-Next, create a file `source.js`, where you'll type code that uses Ink:
+接着，创建 `source.js` 文件，在其中编写使用 Ink 的代码：
 
 ```jsx
 import React from 'react';
@@ -207,36 +209,37 @@ const Demo = () => <Text>Hello World</Text>;
 render(<Demo />);
 ```
 
-Then, transpile this file with Babel:
+然后用 Babel 转译该文件：
 
 ```sh
 npx babel source.js -o cli.js
 ```
 
-Now you can run `cli.js` with Node.js:
+现在你可以使用 Node.js 运行 `cli.js`：
 
 ```sh
 node cli
 ```
 
-If you don't like transpiling files during development, you can use [import-jsx](https://github.com/vadimdemedes/import-jsx) or [@esbuild-kit/esm-loader](https://github.com/esbuild-kit/esm-loader) to `import` a JSX file and transpile it on the fly.
+如果你不希望在开发时先转译文件，可以使用 [import-jsx](https://github.com/vadimdemedes/import-jsx) 或 [@esbuild-kit/esm-loader](https://github.com/esbuild-kit/esm-loader) 直接 `import` JSX 文件并按需即时转译。
 
 </p>
 </details>
 
-Ink uses [Yoga](https://github.com/facebook/yoga), a Flexbox layout engine, to build great user interfaces for your CLIs using familiar CSS-like properties you've used when building apps for the browser.
-It's important to remember that each element is a Flexbox container.
-Think of it as if every `<div>` in the browser had `display: flex`.
-See [`<Box>`](#box) built-in component below for documentation on how to use Flexbox layouts in Ink.
-Note that all text must be wrapped in a [`<Text>`](#text) component.
+Ink 使用 [Yoga](https://github.com/facebook/yoga) 这个 Flexbox 布局引擎，在 CLI 中构建优秀界面，并沿用你在浏览器开发中熟悉的类 CSS 属性。
+要记住的一点是：每个元素都是 Flexbox 容器。
+你可以把它理解为浏览器中的每个 `<div>` 都默认带有 `display: flex`。
+有关 Flexbox 布局的使用方式，请参考下文内置组件 [`<Box>`](#box) 的说明。
+注意，所有文本都必须包裹在 [`<Text>`](#text) 组件中。
 
 ## App Lifecycle
 
-An Ink app is a Node.js process, so it stays alive only while there is active work in the event loop (timers, pending promises, [`useInput`](#useinputinputhandler-options) listening on `stdin`, etc.). If your component tree has no async work, the app will render once and exit immediately.
+Ink 应用本质上是一个 Node.js 进程，因此它只会在事件循环中仍有活动任务（计时器、未完成的 Promise、监听 `stdin` 的 [`useInput`](#useinputinputhandler-options) 等）时保持存活。
+如果你的组件树中没有异步任务，应用会渲染一次后立即退出。
 
-To exit the app, press **Ctrl+C** (enabled by default via [`exitOnCtrlC`](#exitonctrlc)), call [`exit()`](#exiterrororresult) from [`useApp`](#useapp) inside a component, or call [`unmount()`](#unmount) on the object returned by [`render()`](#rendertree-options).
+要退出应用，可以按 **Ctrl+C**（默认通过 [`exitOnCtrlC`](#exitonctrlc) 启用），在组件内通过 [`useApp`](#useapp) 调用 [`exit()`](#exiterrororresult)，或在 [`render()`](#rendertree-options) 返回对象上调用 [`unmount()`](#unmount)。
 
-Use [`waitUntilExit()`](#waituntilexit) to run code after the app is unmounted:
+使用 [`waitUntilExit()`](#waituntilexit) 可在应用卸载后执行代码：
 
 ```jsx
 const {waitUntilExit} = render(<MyApp />);
@@ -250,7 +253,7 @@ console.log('App exited');
 
 ### `<Text>`
 
-This component can display text and change its style to make it bold, underlined, italic, or strikethrough.
+该组件用于显示文本，并支持加粗、下划线、斜体、删除线等样式。
 
 ```jsx
 import {render, Text} from 'ink';
@@ -274,14 +277,14 @@ render(<Example />);
 ```
 
 > [!NOTE]
-> `<Text>` allows only text nodes and nested `<Text>` components inside of it. For example, `<Box>` component can't be used inside `<Text>`.
+> `<Text>` 内只允许文本节点以及嵌套的 `<Text>` 组件。例如，不能在 `<Text>` 中使用 `<Box>` 组件。
 
 #### color
 
 Type: `string`
 
-Change text color.
-Ink uses [chalk](https://github.com/chalk/chalk) under the hood, so all its functionality is supported.
+修改文本颜色。
+Ink 底层使用 [chalk](https://github.com/chalk/chalk)，因此支持其全部能力。
 
 ```jsx
 <Text color="green">Green</Text>
@@ -295,7 +298,7 @@ Ink uses [chalk](https://github.com/chalk/chalk) under the hood, so all its func
 
 Type: `string`
 
-Same as `color` above, but for background.
+与上面的 `color` 相同，但用于背景色。
 
 ```jsx
 <Text backgroundColor="green" color="white">Green</Text>
@@ -307,10 +310,10 @@ Same as `color` above, but for background.
 
 #### dimColor
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `false`
 
-Dim the color (make it less bright).
+降低颜色亮度（使其更暗）。
 
 ```jsx
 <Text color="red" dimColor>
@@ -322,38 +325,38 @@ Dim the color (make it less bright).
 
 #### bold
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `false`
 
-Make the text bold.
+将文本设为粗体。
 
 #### italic
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `false`
 
-Make the text italic.
+将文本设为斜体。
 
 #### underline
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `false`
 
-Make the text underlined.
+给文本添加下划线。
 
 #### strikethrough
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `false`
 
-Make the text crossed with a line.
+给文本添加删除线。
 
 #### inverse
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `false`
 
-Invert background and foreground colors.
+反转前景色与背景色。
 
 ```jsx
 <Text inverse color="yellow">
@@ -365,19 +368,19 @@ Invert background and foreground colors.
 
 #### wrap
 
-Type: `string`\
-Allowed values: `wrap` `truncate` `truncate-start` `truncate-middle` `truncate-end`\
+Type: `string` 
+Allowed values: `wrap` `truncate` `truncate-start` `truncate-middle` `truncate-end` 
 Default: `wrap`
 
-This property tells Ink to wrap or truncate text if its width is larger than the container.
-If `wrap` is passed (the default), Ink will wrap text and split it into multiple lines.
-If `truncate-*` is passed, Ink will truncate text instead, resulting in one line of text with the rest cut off.
+该属性用于在文本宽度大于容器时控制换行或截断行为。
+传入 `wrap`（默认值）时，Ink 会对文本进行换行并拆分成多行。
+传入 `truncate-*` 时，Ink 会改为截断文本，最终只显示一行，其余内容被截去。
 
 ```jsx
 <Box width={7}>
 	<Text>Hello World</Text>
 </Box>
-//=> 'Hello\nWorld'
+//=> 'Hello nWorld'
 
 // `truncate` is an alias to `truncate-end`
 <Box width={7}>
@@ -398,8 +401,8 @@ If `truncate-*` is passed, Ink will truncate text instead, resulting in one line
 
 ### `<Box>`
 
-`<Box>` is an essential Ink component to build your layout.
-It's like `<div style="display: flex">` in the browser.
+`<Box>` 是用于构建布局的核心 Ink 组件。
+它类似浏览器中的 `<div style="display: flex">`。
 
 ```jsx
 import {render, Box, Text} from 'ink';
@@ -419,8 +422,8 @@ render(<Example />);
 
 Type: `number` `string`
 
-Width of the element in spaces.
-You can also set it as a percentage, which will calculate the width based on the width of the parent element.
+元素宽度（以空格单元为单位）。
+你也可以设置为百分比，宽度将基于父元素宽度计算。
 
 ```jsx
 <Box width={4}>
@@ -443,14 +446,14 @@ You can also set it as a percentage, which will calculate the width based on the
 
 Type: `number` `string`
 
-Height of the element in lines (rows).
-You can also set it as a percentage, which will calculate the height based on the height of the parent element.
+元素高度（以行数为单位）。
+你也可以设置为百分比，高度将基于父元素高度计算。
 
 ```jsx
 <Box height={4}>
 	<Text>X</Text>
 </Box>
-//=> 'X\n\n\n'
+//=> 'X n n n'
 ```
 
 ```jsx
@@ -460,95 +463,95 @@ You can also set it as a percentage, which will calculate the height based on th
 	</Box>
 	<Text>Y</Text>
 </Box>
-//=> 'X\n\n\nY\n\n'
+//=> 'X n n nY n n'
 ```
 
 ##### minWidth
 
 Type: `number`
 
-Sets a minimum width of the element.
-Percentages aren't supported yet; see https://github.com/facebook/yoga/issues/872.
+设置元素最小宽度。
+暂不支持百分比；见 https://github.com/facebook/yoga/issues/872。
 
 ##### minHeight
 
 Type: `number` `string`
 
-Sets a minimum height of the element in lines (rows).
-You can also set it as a percentage, which will calculate the minimum height based on the height of the parent element.
+设置元素最小高度（以行数为单位）。
+你也可以设置为百分比，最小高度将基于父元素高度计算。
 
 ##### maxWidth
 
 Type: `number`
 
-Sets a maximum width of the element.
-Percentages aren't supported yet; see https://github.com/facebook/yoga/issues/872.
+设置元素最大宽度。
+暂不支持百分比；见 https://github.com/facebook/yoga/issues/872。
 
 ##### maxHeight
 
 Type: `number` `string`
 
-Sets a maximum height of the element in lines (rows).
-You can also set it as a percentage, which will calculate the maximum height based on the height of the parent element.
+设置元素最大高度（以行数为单位）。
+你也可以设置为百分比，最大高度将基于父元素高度计算。
 
 ##### aspectRatio
 
 Type: `number`
 
-Defines the aspect ratio (width/height) for the element.
+定义元素宽高比（width/height）。
 
-Use it with at least one size constraint (`width`, `height`, `minHeight`, or `maxHeight`) so Ink can derive the missing dimension.
+请至少与一个尺寸约束（`width`、`height`、`minHeight` 或 `maxHeight`）配合使用，这样 Ink 才能推导出缺失维度。
 
 #### Padding
 
 ##### paddingTop
 
-Type: `number`\
+Type: `number` 
 Default: `0`
 
-Top padding.
+上内边距。
 
 ##### paddingBottom
 
-Type: `number`\
+Type: `number` 
 Default: `0`
 
-Bottom padding.
+下内边距。
 
 ##### paddingLeft
 
-Type: `number`\
+Type: `number` 
 Default: `0`
 
-Left padding.
+左内边距。
 
 ##### paddingRight
 
-Type: `number`\
+Type: `number` 
 Default: `0`
 
-Right padding.
+右内边距。
 
 ##### paddingX
 
-Type: `number`\
+Type: `number` 
 Default: `0`
 
-Horizontal padding. Equivalent to setting `paddingLeft` and `paddingRight`.
+水平内边距。等价于同时设置 `paddingLeft` 和 `paddingRight`。
 
 ##### paddingY
 
-Type: `number`\
+Type: `number` 
 Default: `0`
 
-Vertical padding. Equivalent to setting `paddingTop` and `paddingBottom`.
+垂直内边距。等价于同时设置 `paddingTop` 和 `paddingBottom`。
 
 ##### padding
 
-Type: `number`\
+Type: `number` 
 Default: `0`
 
-Padding on all sides. Equivalent to setting `paddingTop`, `paddingBottom`, `paddingLeft` and `paddingRight`.
+四边内边距。等价于同时设置 `paddingTop`、`paddingBottom`、`paddingLeft` 和 `paddingRight`。
 
 ```jsx
 <Box paddingTop={2}><Text>Top</Text></Box>
@@ -564,52 +567,52 @@ Padding on all sides. Equivalent to setting `paddingTop`, `paddingBottom`, `padd
 
 ##### marginTop
 
-Type: `number`\
+Type: `number` 
 Default: `0`
 
-Top margin.
+上外边距。
 
 ##### marginBottom
 
-Type: `number`\
+Type: `number` 
 Default: `0`
 
-Bottom margin.
+下外边距。
 
 ##### marginLeft
 
-Type: `number`\
+Type: `number` 
 Default: `0`
 
-Left margin.
+左外边距。
 
 ##### marginRight
 
-Type: `number`\
+Type: `number` 
 Default: `0`
 
-Right margin.
+右外边距。
 
 ##### marginX
 
-Type: `number`\
+Type: `number` 
 Default: `0`
 
-Horizontal margin. Equivalent to setting `marginLeft` and `marginRight`.
+水平外边距。等价于同时设置 `marginLeft` 和 `marginRight`。
 
 ##### marginY
 
-Type: `number`\
+Type: `number` 
 Default: `0`
 
-Vertical margin. Equivalent to setting `marginTop` and `marginBottom`.
+垂直外边距。等价于同时设置 `marginTop` 和 `marginBottom`。
 
 ##### margin
 
-Type: `number`\
+Type: `number` 
 Default: `0`
 
-Margin on all sides. Equivalent to setting `marginTop`, `marginBottom`, `marginLeft` and `marginRight`.
+四边外边距。等价于同时设置 `marginTop`、`marginBottom`、`marginLeft` 和 `marginRight`。
 
 ```jsx
 <Box marginTop={2}><Text>Top</Text></Box>
@@ -625,10 +628,10 @@ Margin on all sides. Equivalent to setting `marginTop`, `marginBottom`, `marginL
 
 #### gap
 
-Type: `number`\
+Type: `number` 
 Default: `0`
 
-Size of the gap between an element's columns and rows. A shorthand for `columnGap` and `rowGap`.
+元素列与行之间的间距大小。是 `columnGap` 和 `rowGap` 的简写。
 
 ```jsx
 <Box gap={1} width={3} flexWrap="wrap">
@@ -643,10 +646,10 @@ Size of the gap between an element's columns and rows. A shorthand for `columnGa
 
 #### columnGap
 
-Type: `number`\
+Type: `number` 
 Default: `0`
 
-Size of the gap between an element's columns.
+元素列之间的间距大小。
 
 ```jsx
 <Box columnGap={1}>
@@ -658,10 +661,10 @@ Size of the gap between an element's columns.
 
 #### rowGap
 
-Type: `number`\
+Type: `number` 
 Default: `0`
 
-Size of the gap between an element's rows.
+元素行之间的间距大小。
 
 ```jsx
 <Box flexDirection="column" rowGap={1}>
@@ -677,10 +680,10 @@ Size of the gap between an element's rows.
 
 ##### flexGrow
 
-Type: `number`\
+Type: `number` 
 Default: `0`
 
-See [flex-grow](https://css-tricks.com/almanac/properties/f/flex-grow/).
+见 [flex-grow](https://css-tricks.com/almanac/properties/f/flex-grow/)。
 
 ```jsx
 <Box>
@@ -693,10 +696,10 @@ See [flex-grow](https://css-tricks.com/almanac/properties/f/flex-grow/).
 
 ##### flexShrink
 
-Type: `number`\
+Type: `number` 
 Default: `1`
 
-See [flex-shrink](https://css-tricks.com/almanac/properties/f/flex-shrink/).
+见 [flex-shrink](https://css-tricks.com/almanac/properties/f/flex-shrink/)。
 
 ```jsx
 <Box width={20}>
@@ -713,7 +716,7 @@ See [flex-shrink](https://css-tricks.com/almanac/properties/f/flex-shrink/).
 
 Type: `number` `string`
 
-See [flex-basis](https://css-tricks.com/almanac/properties/f/flex-basis/).
+见 [flex-basis](https://css-tricks.com/almanac/properties/f/flex-basis/)。
 
 ```jsx
 <Box width={6}>
@@ -737,10 +740,10 @@ See [flex-basis](https://css-tricks.com/almanac/properties/f/flex-basis/).
 
 ##### flexDirection
 
-Type: `string`\
+Type: `string` 
 Allowed values: `row` `row-reverse` `column` `column-reverse`
 
-See [flex-direction](https://css-tricks.com/almanac/properties/f/flex-direction/).
+见 [flex-direction](https://css-tricks.com/almanac/properties/f/flex-direction/)。
 
 ```jsx
 <Box>
@@ -776,10 +779,10 @@ See [flex-direction](https://css-tricks.com/almanac/properties/f/flex-direction/
 
 ##### flexWrap
 
-Type: `string`\
+Type: `string` 
 Allowed values: `nowrap` `wrap` `wrap-reverse`
 
-See [flex-wrap](https://css-tricks.com/almanac/properties/f/flex-wrap/).
+见 [flex-wrap](https://css-tricks.com/almanac/properties/f/flex-wrap/)。
 
 ```jsx
 <Box width={2} flexWrap="wrap">
@@ -802,10 +805,10 @@ See [flex-wrap](https://css-tricks.com/almanac/properties/f/flex-wrap/).
 
 ##### alignItems
 
-Type: `string`\
+Type: `string` 
 Allowed values: `flex-start` `center` `flex-end` `stretch` `baseline`
 
-See [align-items](https://css-tricks.com/almanac/properties/a/align-items/).
+见 [align-items](https://css-tricks.com/almanac/properties/a/align-items/)。
 
 ```jsx
 <Box alignItems="flex-start">
@@ -859,11 +862,11 @@ See [align-items](https://css-tricks.com/almanac/properties/a/align-items/).
 
 ##### alignSelf
 
-Type: `string`\
-Default: `auto`\
+Type: `string` 
+Default: `auto` 
 Allowed values: `auto` `flex-start` `center` `flex-end` `stretch` `baseline`
 
-See [align-self](https://css-tricks.com/almanac/properties/a/align-self/).
+见 [align-self](https://css-tricks.com/almanac/properties/a/align-self/)。
 
 ```jsx
 <Box height={3}>
@@ -896,20 +899,20 @@ See [align-self](https://css-tricks.com/almanac/properties/a/align-self/).
 
 ##### alignContent
 
-Type: `string`\
-Default: `flex-start`\
+Type: `string` 
+Default: `flex-start` 
 Allowed values: `flex-start` `flex-end` `center` `stretch` `space-between` `space-around` `space-evenly`
 
-Defines alignment between flex lines on the cross axis when `flexWrap` creates multiple lines.
-See [align-content](https://css-tricks.com/almanac/properties/a/align-content/).
-Unlike CSS (`stretch`), Ink defaults to `flex-start` so wrapped lines stay compact and fixed-height boxes don't gain unexpected empty rows unless you opt in to stretching.
+当 `flexWrap` 产生多行时，定义交叉轴上各 flex 行之间的对齐方式。
+见 [align-content](https://css-tricks.com/almanac/properties/a/align-content/)。
+与 CSS 默认值（`stretch`）不同，Ink 默认使用 `flex-start`，因此换行后的行会保持紧凑；除非你显式启用拉伸，否则固定高度的 Box 不会出现意外空白行。
 
 ##### justifyContent
 
-Type: `string`\
+Type: `string` 
 Allowed values: `flex-start` `center` `flex-end` `space-between` `space-around` `space-evenly`
 
-See [justify-content](https://css-tricks.com/almanac/properties/j/justify-content/).
+见 [justify-content](https://css-tricks.com/almanac/properties/j/justify-content/)。
 
 ```jsx
 <Box justifyContent="flex-start">
@@ -950,86 +953,86 @@ See [justify-content](https://css-tricks.com/almanac/properties/j/justify-conten
 
 ##### position
 
-Type: `string`\
-Allowed values: `relative` `absolute` `static`\
+Type: `string` 
+Allowed values: `relative` `absolute` `static` 
 Default: `relative`
 
-Controls how the element is positioned.
+控制元素如何定位。
 
-When `position` is `static`, `top`, `right`, `bottom`, and `left` are ignored.
+当 `position` 为 `static` 时，`top`、`right`、`bottom` 和 `left` 将被忽略。
 
 ##### top
 
 Type: `number` `string`
 
-Top offset for positioned elements.
-You can also set it as a percentage of the parent size.
+定位元素的顶部偏移。
+也可以设置为父元素尺寸的百分比。
 
 ##### right
 
 Type: `number` `string`
 
-Right offset for positioned elements.
-You can also set it as a percentage of the parent size.
+定位元素的右侧偏移。
+也可以设置为父元素尺寸的百分比。
 
 ##### bottom
 
 Type: `number` `string`
 
-Bottom offset for positioned elements.
-You can also set it as a percentage of the parent size.
+定位元素的底部偏移。
+也可以设置为父元素尺寸的百分比。
 
 ##### left
 
 Type: `number` `string`
 
-Left offset for positioned elements.
-You can also set it as a percentage of the parent size.
+定位元素的左侧偏移。
+也可以设置为父元素尺寸的百分比。
 
 #### Visibility
 
 ##### display
 
-Type: `string`\
-Allowed values: `flex` `none`\
+Type: `string` 
+Allowed values: `flex` `none` 
 Default: `flex`
 
-Set this property to `none` to hide the element.
+将该属性设为 `none` 可隐藏元素。
 
 ##### overflowX
 
-Type: `string`\
-Allowed values: `visible` `hidden`\
+Type: `string` 
+Allowed values: `visible` `hidden` 
 Default: `visible`
 
-Behavior for an element's overflow in the horizontal direction.
+元素在水平方向上的溢出行为。
 
 ##### overflowY
 
-Type: `string`\
-Allowed values: `visible` `hidden`\
+Type: `string` 
+Allowed values: `visible` `hidden` 
 Default: `visible`
 
-Behavior for an element's overflow in the vertical direction.
+元素在垂直方向上的溢出行为。
 
 ##### overflow
 
-Type: `string`\
-Allowed values: `visible` `hidden`\
+Type: `string` 
+Allowed values: `visible` `hidden` 
 Default: `visible`
 
-A shortcut for setting `overflowX` and `overflowY` at the same time.
+同时设置 `overflowX` 与 `overflowY` 的简写。
 
 #### Borders
 
 ##### borderStyle
 
-Type: `string`\
+Type: `string` 
 Allowed values: `single` `double` `round` `bold` `singleDouble` `doubleSingle` `classic` | `BoxStyle`
 
-Add a border with a specified style.
-If `borderStyle` is `undefined` (the default), no border will be added.
-Ink uses border styles from the [`cli-boxes`](https://github.com/sindresorhus/cli-boxes) module.
+以指定样式添加边框。
+如果 `borderStyle` 为 `undefined`（默认值），则不会添加边框。
+Ink 使用 [`cli-boxes`](https://github.com/sindresorhus/cli-boxes) 模块提供的边框样式。
 
 ```jsx
 <Box flexDirection="column">
@@ -1069,7 +1072,7 @@ Ink uses border styles from the [`cli-boxes`](https://github.com/sindresorhus/cl
 
 <img src="media/box-borderStyle.jpg" width="521">
 
-Alternatively, pass a custom border style like so:
+或者，你也可以这样传入自定义边框样式：
 
 ```jsx
 <Box
@@ -1088,14 +1091,14 @@ Alternatively, pass a custom border style like so:
 </Box>
 ```
 
-See example in [examples/borders](examples/borders/borders.tsx).
+示例见 [examples/borders](examples/borders/borders.tsx)。
 
 ##### borderColor
 
 Type: `string`
 
-Change border color.
-A shorthand for setting `borderTopColor`, `borderRightColor`, `borderBottomColor`, and `borderLeftColor`.
+修改边框颜色。
+是同时设置 `borderTopColor`、`borderRightColor`、`borderBottomColor` 和 `borderLeftColor` 的简写。
 
 ```jsx
 <Box borderStyle="round" borderColor="green">
@@ -1109,8 +1112,8 @@ A shorthand for setting `borderTopColor`, `borderRightColor`, `borderBottomColor
 
 Type: `string`
 
-Change top border color.
-Accepts the same values as [`color`](#color) in `<Text>` component.
+修改上边框颜色。
+可接受与 `<Text>` 组件中 [`color`](#color) 相同的取值。
 
 ```jsx
 <Box borderStyle="round" borderTopColor="green">
@@ -1122,8 +1125,8 @@ Accepts the same values as [`color`](#color) in `<Text>` component.
 
 Type: `string`
 
-Change the right border color.
-Accepts the same values as [`color`](#color) in `<Text>` component.
+修改右边框颜色。
+可接受与 `<Text>` 组件中 [`color`](#color) 相同的取值。
 
 ```jsx
 <Box borderStyle="round" borderRightColor="green">
@@ -1135,8 +1138,8 @@ Accepts the same values as [`color`](#color) in `<Text>` component.
 
 Type: `string`
 
-Change the bottom border color.
-Accepts the same values as [`color`](#color) in `<Text>` component.
+修改下边框颜色。
+可接受与 `<Text>` 组件中 [`color`](#color) 相同的取值。
 
 ```jsx
 <Box borderStyle="round" borderBottomColor="green">
@@ -1148,8 +1151,8 @@ Accepts the same values as [`color`](#color) in `<Text>` component.
 
 Type: `string`
 
-Change the left border color.
-Accepts the same values as [`color`](#color) in `<Text>` component.
+修改左边框颜色。
+可接受与 `<Text>` 组件中 [`color`](#color) 相同的取值。
 
 ```jsx
 <Box borderStyle="round" borderLeftColor="green">
@@ -1159,11 +1162,11 @@ Accepts the same values as [`color`](#color) in `<Text>` component.
 
 ##### borderDimColor
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `false`
 
-Dim the border color.
-A shorthand for setting `borderTopDimColor`, `borderBottomDimColor`, `borderLeftDimColor`, and `borderRightDimColor`.
+降低边框颜色亮度。
+是同时设置 `borderTopDimColor`、`borderBottomDimColor`、`borderLeftDimColor` 和 `borderRightDimColor` 的简写。
 
 ```jsx
 <Box borderStyle="round" borderDimColor>
@@ -1173,10 +1176,10 @@ A shorthand for setting `borderTopDimColor`, `borderBottomDimColor`, `borderLeft
 
 ##### borderTopDimColor
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `false`
 
-Dim the top border color.
+降低上边框颜色亮度。
 
 ```jsx
 <Box borderStyle="round" borderTopDimColor>
@@ -1186,10 +1189,10 @@ Dim the top border color.
 
 ##### borderBottomDimColor
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `false`
 
-Dim the bottom border color.
+降低下边框颜色亮度。
 
 ```jsx
 <Box borderStyle="round" borderBottomDimColor>
@@ -1199,10 +1202,10 @@ Dim the bottom border color.
 
 ##### borderLeftDimColor
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `false`
 
-Dim the left border color.
+降低左边框颜色亮度。
 
 ```jsx
 <Box borderStyle="round" borderLeftDimColor>
@@ -1212,10 +1215,10 @@ Dim the left border color.
 
 ##### borderRightDimColor
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `false`
 
-Dim the right border color.
+降低右边框颜色亮度。
 
 ```jsx
 <Box borderStyle="round" borderRightDimColor>
@@ -1225,31 +1228,31 @@ Dim the right border color.
 
 ##### borderTop
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `true`
 
-Determines whether the top border is visible.
+决定上边框是否可见。
 
 ##### borderRight
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `true`
 
-Determines whether the right border is visible.
+决定右边框是否可见。
 
 ##### borderBottom
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `true`
 
-Determines whether the bottom border is visible.
+决定下边框是否可见。
 
 ##### borderLeft
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `true`
 
-Determines whether the left border is visible.
+决定左边框是否可见。
 
 #### Background
 
@@ -1257,9 +1260,9 @@ Determines whether the left border is visible.
 
 Type: `string`
 
-Background color for the element.
+元素背景颜色。
 
-Accepts the same values as [`color`](#color) in the `<Text>` component.
+可接受与 `<Text>` 组件中 [`color`](#color) 相同的取值。
 
 ```jsx
 <Box flexDirection="column">
@@ -1289,7 +1292,7 @@ Accepts the same values as [`color`](#color) in the `<Text>` component.
 </Box>
 ```
 
-The background color fills the entire `<Box>` area and is inherited by child `<Text>` components unless they specify their own `backgroundColor`.
+背景色会填充整个 `<Box>` 区域，并会被子级 `<Text>` 组件继承，除非子组件显式指定自己的 `backgroundColor`。
 
 ```jsx
 <Box backgroundColor="blue" alignSelf="flex-start">
@@ -1299,7 +1302,7 @@ The background color fills the entire `<Box>` area and is inherited by child `<T
 </Box>
 ```
 
-Background colors work with borders and padding:
+背景色可与边框和内边距协同工作：
 
 ```jsx
 <Box
@@ -1312,19 +1315,19 @@ Background colors work with borders and padding:
 </Box>
 ```
 
-See example in [examples/box-backgrounds](examples/box-backgrounds/box-backgrounds.tsx).
+示例见 [examples/box-backgrounds](examples/box-backgrounds/box-backgrounds.tsx)。
 
 ### `<Newline>`
 
-Adds one or more newline (`\n`) characters.
-Must be used within `<Text>` components.
+添加一个或多个换行符（` n`）。
+必须在 `<Text>` 组件内部使用。
 
 #### count
 
-Type: `number`\
+Type: `number` 
 Default: `1`
 
-Number of newlines to insert.
+插入的换行符数量。
 
 ```jsx
 import {render, Text, Newline} from 'ink';
@@ -1340,7 +1343,7 @@ const Example = () => (
 render(<Example />);
 ```
 
-Output:
+输出：
 
 ```
 Hello
@@ -1349,10 +1352,10 @@ World
 
 ### `<Spacer>`
 
-A flexible space that expands along the major axis of its containing layout.
-It's useful as a shortcut for filling all the available space between elements.
+一个可伸展的空白区域，会沿其容器布局的主轴方向扩展。
+它可作为快捷方式，用于填充元素之间所有可用空间。
 
-For example, using `<Spacer>` in a `<Box>` with default flex direction (`row`) will position "Left" on the left side and will push "Right" to the right side.
+例如，在默认主轴方向（`row`）的 `<Box>` 中使用 `<Spacer>`，会将 "Left" 放在左侧，并把 "Right" 推到右侧。
 
 ```jsx
 import {render, Box, Text, Spacer} from 'ink';
@@ -1368,8 +1371,8 @@ const Example = () => (
 render(<Example />);
 ```
 
-In a vertical flex direction (`column`), it will position "Top" at the top of the container and push "Bottom" to the bottom.
-Note that the container needs to be tall enough to see this in effect.
+在垂直主轴（`column`）中，它会将 "Top" 放在容器顶部，并把 "Bottom" 推到底部。
+注意容器必须足够高，效果才会明显。
 
 ```jsx
 import {render, Box, Text, Spacer} from 'ink';
@@ -1387,16 +1390,12 @@ render(<Example />);
 
 ### `<Static>`
 
-`<Static>` component permanently renders its output above everything else.
-It's useful for displaying activity like completed tasks or logs - things that
-don't change after they're rendered (hence the name "Static").
+`<Static>` 组件会将其输出永久渲染在其他内容之上。
+它非常适合用于展示已完成任务或日志这类内容，即渲染后不会再变化的内容（这也是 "Static" 名称的由来）。
 
-It's preferred to use `<Static>` for use cases like these when you can't know
-or control the number of items that need to be rendered.
+在你无法预先知道或控制要渲染项目数量的场景里，推荐使用 `<Static>`。
 
-For example, [Tap](https://github.com/tapjs/node-tap) uses `<Static>` to display
-a list of completed tests. [Gatsby](https://github.com/gatsbyjs/gatsby) uses it
-to display a list of generated pages while still displaying a live progress bar.
+例如，[Tap](https://github.com/tapjs/node-tap) 使用 `<Static>` 显示已完成测试列表；[Gatsby](https://github.com/gatsbyjs/gatsby) 使用它在显示实时进度条的同时展示已生成页面列表。
 
 ```jsx
 import React, {useState, useEffect} from 'react';
@@ -1454,22 +1453,22 @@ render(<Example />);
 ```
 
 > [!NOTE]
-> `<Static>` only renders new items in the `items` prop and ignores items that were previously rendered. This means that when you add new items to the `items` array, changes you make to previous items will not trigger a rerender.
+> `<Static>` 只会渲染 `items` 属性中新增加的项目，并忽略之前已渲染过的项目。这意味着当你向 `items` 数组新增项目时，对旧项目的修改不会触发重新渲染。
 
-See [examples/static](examples/static/static.tsx) for an example usage of `<Static>` component.
+`<Static>` 的完整示例见 [examples/static](examples/static/static.tsx)。
 
 #### items
 
 Type: `Array`
 
-Array of items of any type to render using the function you pass as a component child.
+一个数组（元素类型不限），通过组件子函数对每个项目进行渲染。
 
 #### style
 
 Type: `object`
 
-Styles to apply to a container of child elements.
-See [`<Box>`](#box) for supported properties.
+应用到子元素容器的样式。
+支持的属性见 [`<Box>`](#box)。
 
 ```jsx
 <Static items={...} style={{padding: 1}}>
@@ -1481,11 +1480,10 @@ See [`<Box>`](#box) for supported properties.
 
 Type: `Function`
 
-Function that is called to render every item in the `items` array.
-The first argument is the item itself, and the second argument is the index of that item in the
-`items` array.
+用于渲染 `items` 数组中每一项的函数。
+第一个参数是当前项本身，第二个参数是该项在 `items` 数组中的索引。
 
-Note that a `key` must be assigned to the root component.
+注意：根组件必须分配 `key`。
 
 ```jsx
 <Static items={['a', 'b', 'c']}>
@@ -1504,16 +1502,16 @@ Note that a `key` must be assigned to the root component.
 
 ### `<Transform>`
 
-Transform a string representation of React components before they're written to output.
-For example, you might want to apply a [gradient to text](https://github.com/sindresorhus/ink-gradient), [add a clickable link](https://github.com/sindresorhus/ink-link), or [create some text effects](https://github.com/sindresorhus/ink-big-text).
-These use cases can't accept React nodes as input; they expect a string.
-That's what the `<Transform>` component does: it gives you an output string of its child components and lets you transform it in any way.
+在 React 组件被写入输出之前，对其字符串表示进行转换。
+例如，你可能希望给文本应用[渐变效果](https://github.com/sindresorhus/ink-gradient)、[添加可点击链接](https://github.com/sindresorhus/ink-link)，或[创建文字特效](https://github.com/sindresorhus/ink-big-text)。
+这些场景无法直接接收 React 节点作为输入；它们期望的是字符串。
+`<Transform>` 组件正是为此而生：它会提供子组件输出的字符串，并允许你按任意方式转换。
 
 > [!NOTE]
-> `<Transform>` must be applied only to `<Text>` children components and shouldn't change the dimensions of the output; otherwise, the layout will be incorrect.
+> `<Transform>` 只能应用于 `<Text>` 子组件，且不应改变输出的尺寸；否则布局会不正确。
 
 > [!IMPORTANT]
-> When children use `<Text>` styling props (e.g. `color`, `bold`), the string passed to `transform` will contain [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code). If your transform manipulates whitespace or does string operations like `.trim()`, you may need to use ANSI-aware methods (e.g. from [`slice-ansi`](https://github.com/chalk/slice-ansi) or [`strip-ansi`](https://github.com/chalk/strip-ansi)).
+> 当子元素使用 `<Text>` 的样式属性（例如 `color`、`bold`）时，传给 `transform` 的字符串会包含 [ANSI 转义码](https://en.wikipedia.org/wiki/ANSI_escape_code)。如果你的转换会处理空白字符或执行类似 `.trim()` 的字符串操作，可能需要使用 ANSI 感知方法（例如来自 [`slice-ansi`](https://github.com/chalk/slice-ansi) 或 [`strip-ansi`](https://github.com/chalk/strip-ansi)）。
 
 ```jsx
 import {render, Transform} from 'ink';
@@ -1527,11 +1525,11 @@ const Example = () => (
 render(<Example />);
 ```
 
-Since the `transform` function converts all characters to uppercase, the final output rendered to the terminal will be "HELLO WORLD", not "Hello World".
+由于 `transform` 函数会把所有字符转为大写，最终渲染到终端的输出将是 "HELLO WORLD"，而不是 "Hello World"。
 
-When the output wraps to multiple lines, it can be helpful to know which line is being processed.
+当输出换行成多行时，了解当前正在处理哪一行会很有帮助。
 
-For example, to implement a hanging indent component, you can indent all the lines except for the first.
+例如，要实现悬挂缩进组件，可以只对首行之外的行添加缩进。
 
 ```jsx
 import {render, Transform} from 'ink';
@@ -1561,30 +1559,30 @@ render(<HangingIndent indent={4}>{text}</HangingIndent>);
 
 Type: `Function`
 
-Function that transforms children output.
-It accepts children and must return transformed children as well.
+用于转换子元素输出的函数。
+它接收子元素输出并返回转换后的结果。
 
 ##### children
 
 Type: `string`
 
-Output of child components.
+子组件的输出。
 
 ##### index
 
 Type: `number`
 
-The zero-indexed line number of the line that's currently being transformed.
+当前被转换行的零基行号。
 
 ## Hooks
 
 ### useInput(inputHandler, options?)
 
-A React hook that returns `void` and handles user input.
-It's a more convenient alternative to using `useStdin` and listening for `data` events.
-The callback you pass to `useInput` is called for each character when the user enters any input.
-However, if the user pastes text and it's more than one character, the callback will be called only once, and the whole string will be passed as `input`.
-You can find a full example of using `useInput` at [examples/use-input](examples/use-input/use-input.tsx).
+一个返回 `void` 的 React Hook，用于处理用户输入。
+它比使用 `useStdin` 并监听 `data` 事件更方便。
+你传给 `useInput` 的回调会在用户每次输入字符时触发。
+不过，如果用户粘贴的是多字符文本，回调只会触发一次，并把整段字符串作为 `input` 传入。
+完整示例见 [examples/use-input](examples/use-input/use-input.tsx)。
 
 ```jsx
 import {useInput} from 'ink';
@@ -1608,19 +1606,19 @@ const UserInput = () => {
 
 Type: `Function`
 
-The handler function that you pass to `useInput` receives two arguments:
+你传给 `useInput` 的处理函数会接收两个参数：
 
 ##### input
 
 Type: `string`
 
-The input that the program received.
+程序接收到的输入文本。
 
 ##### key
 
 Type: `object`
 
-Handy information about a key that was pressed.
+关于被按下按键的便捷信息。
 
 ###### key.leftArrow
 
@@ -1630,122 +1628,122 @@ Handy information about a key that was pressed.
 
 ###### key.downArrow
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `false`
 
-If an arrow key was pressed, the corresponding property will be `true`.
-For example, if the user presses the left arrow key, `key.leftArrow` equals `true`.
+当按下方向键时，对应属性会为 `true`。
+例如，按下左方向键时，`key.leftArrow` 等于 `true`。
 
 ###### key.return
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `false`
 
-Return (Enter) key was pressed.
+按下了回车（Enter）键。
 
 ###### key.escape
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `false`
 
-Escape key was pressed.
+按下了 Escape 键。
 
 ###### key.ctrl
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `false`
 
-Ctrl key was pressed.
+按下了 Ctrl 键。
 
 ###### key.shift
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `false`
 
-Shift key was pressed.
+按下了 Shift 键。
 
 ###### key.tab
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `false`
 
-Tab key was pressed.
+按下了 Tab 键。
 
 ###### key.backspace
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `false`
 
-Backspace key was pressed.
+按下了 Backspace 键。
 
 ###### key.delete
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `false`
 
-Delete key was pressed.
+按下了 Delete 键。
 
 ###### key.pageDown
 
 ###### key.pageUp
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `false`
 
-If the Page Up or Page Down key was pressed, the corresponding property will be `true`.
-For example, if the user presses Page Down, `key.pageDown` equals `true`.
+当按下 Page Up 或 Page Down 键时，对应属性会为 `true`。
+例如，按下 Page Down 时，`key.pageDown` 等于 `true`。
 
 ###### key.home
 
 ###### key.end
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `false`
 
-If the Home or End key was pressed, the corresponding property will be `true`.
-For example, if the user presses End, `key.end` equals `true`.
+当按下 Home 或 End 键时，对应属性会为 `true`。
+例如，按下 End 时，`key.end` 等于 `true`。
 
 ###### key.meta
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `false`
 
-[Meta key](https://en.wikipedia.org/wiki/Meta_key) was pressed.
+按下了 [Meta 键](https://en.wikipedia.org/wiki/Meta_key)。
 
 ###### key.super
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `false`
 
-Super key (Cmd on macOS, Win on Windows) was pressed. Requires [kitty keyboard protocol](#kittykeyboard).
+按下了 Super 键（macOS 上为 Cmd，Windows 上为 Win）。需要启用 [kitty keyboard protocol](#kittykeyboard)。
 
 ###### key.hyper
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `false`
 
-Hyper key was pressed. Requires [kitty keyboard protocol](#kittykeyboard).
+按下了 Hyper 键。需要启用 [kitty keyboard protocol](#kittykeyboard)。
 
 ###### key.capsLock
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `false`
 
-Caps Lock was active. Requires [kitty keyboard protocol](#kittykeyboard).
+Caps Lock 处于激活状态。需要启用 [kitty keyboard protocol](#kittykeyboard)。
 
 ###### key.numLock
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `false`
 
-Num Lock was active. Requires [kitty keyboard protocol](#kittykeyboard).
+Num Lock 处于激活状态。需要启用 [kitty keyboard protocol](#kittykeyboard)。
 
 ###### key.eventType
 
-Type: `'press' | 'repeat' | 'release'`\
+Type: `'press' | 'repeat' | 'release'` 
 Default: `undefined`
 
-The type of key event. Only available with [kitty keyboard protocol](#kittykeyboard). Without the protocol, this property is `undefined`.
+按键事件类型。仅在启用 [kitty keyboard protocol](#kittykeyboard) 时可用。未启用时该属性为 `undefined`。
 
 #### options
 
@@ -1753,17 +1751,17 @@ Type: `object`
 
 ##### isActive
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `true`
 
-Enable or disable capturing of user input.
-Useful when there are multiple `useInput` hooks used at once to avoid handling the same input several times.
+启用或禁用用户输入捕获。
+当同时使用多个 `useInput` Hook 时，这可以避免同一输入被重复处理。
 
 ### usePaste(handler, options?)
 
-A React hook that calls `handler` whenever the user pastes text. Bracketed paste mode (`\x1b[?2004h`) is automatically enabled while the hook is active, so pasted text arrives as a single string rather than being misinterpreted as individual key presses.
+一个 React Hook，会在用户粘贴文本时调用 `handler`。Hook 激活期间会自动开启 Bracketed paste mode（` x1b[?2004h`），因此粘贴内容会以单个字符串送达，而不会被误解为逐个按键事件。
 
-`usePaste` and `useInput` can be used together in the same component. They operate on separate event channels, so paste content is never forwarded to `useInput` handlers when `usePaste` is active.
+`usePaste` 和 `useInput` 可以在同一个组件中同时使用。它们工作在不同事件通道上，因此当 `usePaste` 激活时，粘贴内容不会转发给 `useInput` 处理器。
 
 ```jsx
 import {useInput, usePaste} from 'ink';
@@ -1789,13 +1787,13 @@ const MyInput = () => {
 
 Type: `Function`
 
-Called with the full pasted string whenever the user pastes text. The string is delivered verbatim — newlines, escape sequences, and other special characters are preserved exactly as pasted.
+每当用户粘贴文本时，会以完整字符串调用该函数。该字符串会按原样传递，换行、转义序列及其他特殊字符都会被完整保留。
 
 ##### text
 
 Type: `string`
 
-The pasted text.
+粘贴的文本。
 
 #### options
 
@@ -1803,30 +1801,30 @@ Type: `object`
 
 ##### isActive
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `true`
 
-Enable or disable the paste handler. Useful when multiple components use `usePaste` and only one should be active at a time.
+启用或禁用粘贴处理器。当多个组件使用 `usePaste` 且一次只应激活一个时，这很有用。
 
 ### useApp()
 
-A React hook that returns app lifecycle methods.
+一个返回应用生命周期方法的 React Hook。
 
 #### exit(errorOrResult?)
 
 Type: `Function`
 
-Exit (unmount) the whole Ink app.
+退出（卸载）整个 Ink 应用。
 
 ##### errorOrResult
 
 Type: `Error | unknown`
 
-Optional value that controls how [`waitUntilExit`](#waituntilexit) settles:
+可选值，用于控制 [`waitUntilExit`](#waituntilexit) 的完成方式：
 
-- `exit()` resolves with `undefined`.
-- `exit(error)` rejects when `error` is an `Error`.
-- `exit(value)` resolves with `value`.
+- `exit()` 以 `undefined` resolve。
+- `exit(error)` 当 `error` 是 `Error` 时 reject。
+- `exit(value)` 以 `value` resolve。
 
 ```js
 import {useEffect} from 'react';
@@ -1850,7 +1848,7 @@ const Example = () => {
 
 Type: `Function`
 
-Returns a promise that settles after pending render output is flushed to stdout.
+返回一个 Promise，在待处理渲染输出被刷新到 stdout 后完成。
 
 ```js
 import {useEffect} from 'react';
@@ -1872,15 +1870,15 @@ const Example = () => {
 
 ### useStdin()
 
-A React hook that returns the stdin stream and stdin-related utilities.
+一个 React Hook，返回 stdin 流以及与 stdin 相关的工具方法。
 
 #### stdin
 
-Type: `stream.Readable`\
+Type: `stream.Readable` 
 Default: `process.stdin`
 
-The stdin stream passed to `render()` in `options.stdin`, or `process.stdin` by default.
-Useful if your app needs to handle user input.
+传给 `render()` 的 `options.stdin`，或默认的 `process.stdin`。
+当你的应用需要处理用户输入时很有用。
 
 ```js
 import {useStdin} from 'ink';
@@ -1896,8 +1894,8 @@ const Example = () => {
 
 Type: `boolean`
 
-A boolean flag determining if the current `stdin` supports `setRawMode`.
-A component using `setRawMode` might want to use `isRawModeSupported` to nicely fall back in environments where raw mode is not supported.
+一个布尔标记，用于判断当前 `stdin` 是否支持 `setRawMode`。
+使用 `setRawMode` 的组件可以借助 `isRawModeSupported` 在不支持 raw mode 的环境中优雅降级。
 
 ```jsx
 import {useStdin} from 'ink';
@@ -1921,10 +1919,10 @@ Type: `function`
 
 Type: `boolean`
 
-See [`setRawMode`](https://nodejs.org/api/tty.html#tty_readstream_setrawmode_mode).
-Ink exposes this function to be able to handle <kbd>Ctrl</kbd>+<kbd>C</kbd>, that's why you should use Ink's `setRawMode` instead of `process.stdin.setRawMode`.
+参见 [`setRawMode`](https://nodejs.org/api/tty.html#tty_readstream_setrawmode_mode)。
+Ink 暴露这个函数是为了正确处理 <kbd>Ctrl</kbd>+<kbd>C</kbd>，因此你应使用 Ink 提供的 `setRawMode`，而不是 `process.stdin.setRawMode`。
 
-**Warning:** This function will throw unless the current `stdin` supports `setRawMode`. Use [`isRawModeSupported`](#israwmodesupported) to detect `setRawMode` support.
+**Warning:** 除非当前 `stdin` 支持 `setRawMode`，否则此函数会抛出异常。请使用 [`isRawModeSupported`](#israwmodesupported) 先行检测。
 
 ```js
 import {useStdin} from 'ink';
@@ -1946,11 +1944,11 @@ const Example = () => {
 
 ### useStdout()
 
-A React hook that returns the stdout stream where Ink renders your app and stdout-related utilities.
+一个 React Hook，返回 Ink 渲染输出所使用的 stdout 流以及相关工具方法。
 
 #### stdout
 
-Type: `stream.Writable`\
+Type: `stream.Writable` 
 Default: `process.stdout`
 
 ```js
@@ -1965,15 +1963,15 @@ const Example = () => {
 
 #### write(data)
 
-Write any string to stdout while preserving Ink's output.
-It's useful when you want to display external information outside of Ink's rendering and ensure there's no conflict between the two.
-It's similar to `<Static>`, except it can't accept components; it only works with strings.
+在保持 Ink 输出正常显示的同时，向 stdout 写入任意字符串。
+当你希望在 Ink 渲染之外显示外部信息，并确保两者不冲突时非常有用。
+它与 `<Static>` 类似，但不能接收组件，只能处理字符串。
 
 ##### data
 
 Type: `string`
 
-Data to write to stdout.
+要写入 stdout 的数据。
 
 ```js
 import {useStdout} from 'ink';
@@ -1983,27 +1981,27 @@ const Example = () => {
 
 	useEffect(() => {
 		// Write a single message to stdout, above Ink's output
-		write('Hello from Ink to stdout\n');
+		write('Hello from Ink to stdout n');
 	}, []);
 
 	return …
 };
 ```
 
-See additional usage example in [examples/use-stdout](examples/use-stdout/use-stdout.tsx).
+更多用法示例见 [examples/use-stdout](examples/use-stdout/use-stdout.tsx)。
 
 ### useBoxMetrics(ref)
 
-A React hook that returns the current layout metrics for a tracked box element.
-It updates when layout changes (for example terminal resize, sibling/content changes, or position changes).
+一个 React Hook，返回被跟踪 Box 元素的当前布局度量信息。
+当布局变化时（例如终端尺寸变化、兄弟节点或内容变化、位置变化），它会自动更新。
 
-Use `hasMeasured` to detect when the currently tracked element has been measured.
+可使用 `hasMeasured` 判断当前跟踪元素是否已完成测量。
 
 #### ref
 
 Type: `React.RefObject<DOMElement>`
 
-A ref to the `<Box>` element to track.
+指向要跟踪的 `<Box>` 元素的 ref。
 
 ```jsx
 import {useRef} from 'react';
@@ -2027,45 +2025,45 @@ const Example = () => {
 
 Type: `number`
 
-Element width.
+元素宽度。
 
 #### height
 
 Type: `number`
 
-Element height.
+元素高度。
 
 #### left
 
 Type: `number`
 
-Distance from the left edge of the parent.
+到父元素左边缘的距离。
 
 #### top
 
 Type: `number`
 
-Distance from the top edge of the parent.
+到父元素上边缘的距离。
 
 #### hasMeasured
 
 Type: `boolean`
 
-Whether the currently tracked element has been measured.
+当前跟踪元素是否已完成测量。
 
 > [!NOTE]
-> The hook returns `{width: 0, height: 0, left: 0, top: 0}` until the first layout pass completes. It also returns zeros when the tracked ref is detached.
+> 在首次布局完成前，该 Hook 返回 `{width: 0, height: 0, left: 0, top: 0}`。当跟踪 ref 脱离挂载时，也会返回全零。
 
 ### useStderr()
 
-A React hook that returns the stderr stream and stderr-related utilities.
+一个 React Hook，返回 stderr 流以及与 stderr 相关的工具方法。
 
 #### stderr
 
-Type: `stream.Writable`\
+Type: `stream.Writable` 
 Default: `process.stderr`
 
-Stderr stream.
+stderr 流。
 
 ```js
 import {useStderr} from 'ink';
@@ -2079,16 +2077,16 @@ const Example = () => {
 
 #### write(data)
 
-Write any string to stderr while preserving Ink's output.
+在保持 Ink 输出正常显示的同时，向 stderr 写入任意字符串。
 
-It's useful when you want to display external information outside of Ink's rendering and ensure there's no conflict between the two.
-It's similar to `<Static>`, except it can't accept components; it only works with strings.
+当你希望在 Ink 渲染之外显示外部信息，并确保两者不冲突时非常有用。
+它与 `<Static>` 类似，但不能接收组件，只能处理字符串。
 
 ##### data
 
 Type: `string`
 
-Data to write to stderr.
+要写入 stderr 的数据。
 
 ```js
 import {useStderr} from 'ink';
@@ -2098,7 +2096,7 @@ const Example = () => {
 
 	useEffect(() => {
 		// Write a single message to stderr, above Ink's output
-		write('Hello from Ink to stderr\n');
+		write('Hello from Ink to stderr n');
 	}, []);
 
 	return …
@@ -2107,7 +2105,7 @@ const Example = () => {
 
 ### useWindowSize()
 
-A React hook that returns the current terminal dimensions and re-renders the component whenever the terminal is resized.
+一个 React Hook，返回当前终端尺寸，并在终端大小变化时重新渲染组件。
 
 ```js
 import {Text, useWindowSize} from 'ink';
@@ -2127,47 +2125,47 @@ const Example = () => {
 
 Type: `number`
 
-Number of columns (horizontal character cells).
+列数（水平字符单元数）。
 
 #### rows
 
 Type: `number`
 
-Number of rows (vertical character cells).
+行数（垂直字符单元数）。
 
 > [!NOTE]
-> When the terminal is resized narrower, ghost lines may briefly appear depending on the terminal emulator's reflow behavior.
+> 当终端变窄时，可能会短暂出现残影行，具体取决于终端模拟器的重排行为。
 
 ### useFocus(options?)
 
-A React hook that returns focus state and focus controls for the current component.
-A component that uses the `useFocus` hook becomes "focusable" to Ink, so when the user presses <kbd>Tab</kbd>, Ink will switch focus to this component.
-If there are multiple components that execute the `useFocus` hook, focus will be given to them in the order in which these components are rendered.
-This hook returns an object with an `isFocused` boolean property, which determines whether this component is focused.
+一个 React Hook，返回当前组件的焦点状态和焦点控制能力。
+使用 `useFocus` Hook 的组件会变为 Ink 中“可聚焦”的组件，因此当用户按下 <kbd>Tab</kbd> 时，Ink 会将焦点切换到该组件。
+如果有多个组件调用了 `useFocus` Hook，焦点会按这些组件的渲染顺序依次分配。
+该 Hook 返回一个包含 `isFocused` 布尔属性的对象，用于判断当前组件是否获得焦点。
 
 #### options
 
 ##### autoFocus
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `false`
 
-Auto-focus this component if there's no active (focused) component right now.
+如果当前没有活动（已聚焦）组件，则自动将焦点给该组件。
 
 ##### isActive
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `true`
 
-Enable or disable this component's focus, while still maintaining its position in the list of focusable components.
-This is useful for inputs that are temporarily disabled.
+启用或禁用该组件的焦点能力，同时保持其在可聚焦组件列表中的位置。
+这对于暂时禁用的输入组件很有用。
 
 ##### id
 
-Type: `string`\
+Type: `string` 
 Required: `false`
 
-Set a component's focus ID, which can be used to programmatically focus the component. This is useful for large interfaces with many focusable elements to avoid having to cycle through all of them.
+为组件设置焦点 ID，可用于以编程方式聚焦该组件。这对包含大量可聚焦元素的大型界面很有用，避免必须逐个循环切换。
 
 ```jsx
 import {render, useFocus, Text} from 'ink';
@@ -2181,18 +2179,18 @@ const Example = () => {
 render(<Example />);
 ```
 
-See example in [examples/use-focus](examples/use-focus/use-focus.tsx) and [examples/use-focus-with-id](examples/use-focus-with-id/use-focus-with-id.tsx).
+示例见 [examples/use-focus](examples/use-focus/use-focus.tsx) 与 [examples/use-focus-with-id](examples/use-focus-with-id/use-focus-with-id.tsx)。
 
 ### useFocusManager()
 
-A React hook that returns methods to manage focus across focusable components.
+一个 React Hook，返回用于管理可聚焦组件焦点的方法。
 
 #### enableFocus()
 
-Enable focus management for all components.
+为所有组件启用焦点管理。
 
 > [!NOTE]
-> You don't need to call this method manually unless you've disabled focus management. Focus management is enabled by default.
+> 除非你曾禁用焦点管理，否则通常无需手动调用此方法。焦点管理默认已启用。
 
 ```js
 import {useFocusManager} from 'ink';
@@ -2210,8 +2208,8 @@ const Example = () => {
 
 #### disableFocus()
 
-Disable focus management for all components.
-The currently active component (if there's one) will lose its focus.
+禁用所有组件的焦点管理。
+当前活动组件（若存在）将失去焦点。
 
 ```js
 import {useFocusManager} from 'ink';
@@ -2229,12 +2227,12 @@ const Example = () => {
 
 #### focusNext()
 
-Switch focus to the next focusable component.
-If there's no active component right now, focus will be given to the first focusable component.
-If the active component is the last in the list of focusable components, focus will be switched to the first focusable component.
+将焦点切换到下一个可聚焦组件。
+如果当前没有活动组件，则会聚焦第一个可聚焦组件。
+如果当前活动组件已是列表最后一个，则会回到第一个可聚焦组件。
 
 > [!NOTE]
-> Ink calls this method when user presses <kbd>Tab</kbd>.
+> 用户按下 <kbd>Tab</kbd> 时，Ink 会调用该方法。
 
 ```js
 import {useFocusManager} from 'ink';
@@ -2252,12 +2250,12 @@ const Example = () => {
 
 #### focusPrevious()
 
-Switch focus to the previous focusable component.
-If there's no active component right now, focus will be given to the first focusable component.
-If the active component is the first in the list of focusable components, focus will be switched to the last focusable component.
+将焦点切换到上一个可聚焦组件。
+如果当前没有活动组件，则会聚焦第一个可聚焦组件。
+如果当前活动组件已是列表第一个，则会切换到最后一个可聚焦组件。
 
 > [!NOTE]
-> Ink calls this method when user presses <kbd>Shift</kbd>+<kbd>Tab</kbd>.
+> 用户按下 <kbd>Shift</kbd>+<kbd>Tab</kbd> 时，Ink 会调用该方法。
 
 ```js
 import {useFocusManager} from 'ink';
@@ -2279,8 +2277,8 @@ const Example = () => {
 
 Type: `string`
 
-Switch focus to the component with the given [`id`](#id).
-If there's no component with that ID, focus is not changed.
+将焦点切换到指定 [`id`](#id) 的组件。
+若不存在该 ID 对应组件，焦点不会改变。
 
 ```js
 import {useFocusManager, useInput} from 'ink';
@@ -2303,7 +2301,7 @@ const Example = () => {
 
 Type: `string | undefined`
 
-The ID of the currently focused component, or `undefined` if no component is focused.
+当前聚焦组件的 ID；若无组件聚焦，则为 `undefined`。
 
 ```js
 import {Text, useFocusManager} from 'ink';
@@ -2317,8 +2315,8 @@ const Example = () => {
 
 ### useCursor()
 
-A React hook that returns methods to control the terminal cursor position after each render.
-This is essential for IME (Input Method Editor) support, where the composing character is displayed at the cursor location.
+一个 React Hook，返回在每次渲染后控制终端光标位置的方法。
+这对 IME（输入法编辑器）支持至关重要，因为正在组合的字符需要显示在光标位置。
 
 ```jsx
 import {useState} from 'react';
@@ -2346,32 +2344,32 @@ const TextInput = () => {
 
 #### setCursorPosition(position)
 
-Set the cursor position relative to the Ink output. Pass `undefined` to hide the cursor.
+设置相对于 Ink 输出的光标位置。传入 `undefined` 可隐藏光标。
 
 ##### position
 
 Type: `object | undefined`
 
-Use [`string-width`](https://github.com/sindresorhus/string-width) to calculate `x` for strings containing wide characters (CJK, emoji).
+对于包含宽字符（CJK、emoji）的字符串，请使用 [`string-width`](https://github.com/sindresorhus/string-width) 计算 `x`。
 
-See a full example at [examples/cursor-ime](examples/cursor-ime/cursor-ime.tsx).
+完整示例见 [examples/cursor-ime](examples/cursor-ime/cursor-ime.tsx)。
 
 ###### x
 
 Type: `number`
 
-Column position (0-based).
+列位置（从 0 开始）。
 
 ###### y
 
 Type: `number`
 
-Row position from the top of the Ink output (0 = first line).
+相对于 Ink 输出顶部的行位置（0 = 第一行）。
 
 ### useIsScreenReaderEnabled()
 
-A React hook that returns whether a screen reader is enabled.
-This is useful when you want to render different output for screen readers.
+一个 React Hook，返回当前是否启用了屏幕阅读器。
+当你希望为屏幕阅读器渲染不同输出时很有用。
 
 ```jsx
 import {useIsScreenReaderEnabled, Text} from 'ink';
@@ -2395,7 +2393,7 @@ const Example = () => {
 
 Returns: [`Instance`](#instance)
 
-Mount a component and render the output.
+挂载组件并渲染输出。
 
 ##### tree
 
@@ -2407,120 +2405,120 @@ Type: `object`
 
 ###### stdout
 
-Type: `stream.Writable`\
+Type: `stream.Writable` 
 Default: `process.stdout`
 
-Output stream where the app will be rendered.
+应用渲染到的输出流。
 
 ###### stdin
 
-Type: `stream.Readable`\
+Type: `stream.Readable` 
 Default: `process.stdin`
 
-Input stream where app will listen for input.
+应用监听输入的输入流。
 
 ###### stderr
 
-Type: `stream.Writable`\
+Type: `stream.Writable` 
 Default: `process.stderr`
 
-Error stream.
+错误流。
 
 ###### exitOnCtrlC
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `true`
 
-Configure whether Ink should listen for Ctrl+C keyboard input and exit the app.
-This is needed in case `process.stdin` is in [raw mode](https://nodejs.org/api/tty.html#tty_readstream_setrawmode_mode), because then Ctrl+C is ignored by default and the process is expected to handle it manually.
+配置 Ink 是否监听 Ctrl+C 键盘输入并退出应用。
+在 `process.stdin` 处于 [raw mode](https://nodejs.org/api/tty.html#tty_readstream_setrawmode_mode) 时，这一点很重要，因为此时 Ctrl+C 默认会被忽略，进程需自行处理。
 
 ###### patchConsole
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `true`
 
-Patch console methods to ensure console output doesn't mix with Ink's output.
-When any of the `console.*` methods are called (like `console.log()`), Ink intercepts their output, clears the main output, renders output from the console method, and then rerenders the main output again.
-That way, both are visible and don't overlap each other.
+补丁（patch）console 方法，确保 console 输出不会与 Ink 输出混杂。
+当调用 `console.*` 方法（如 `console.log()`）时，Ink 会拦截其输出，清除主输出，渲染 console 输出，再重新渲染主输出。
+这样两者都可见且互不覆盖。
 
-Once unmount starts, Ink restores the native console before React cleanup runs. Teardown-time `console.*` output then follows the normal console behavior instead of being rerouted through Ink.
+一旦开始 unmount，Ink 会在 React 清理执行前恢复原生 console。此后卸载阶段的 `console.*` 输出会走正常 console 行为，而不会再被 Ink 重定向。
 
-This functionality is powered by [patch-console](https://github.com/vadimdemedes/patch-console), so if you need to disable Ink's interception of output but want to build something custom, you can use that.
+该功能由 [patch-console](https://github.com/vadimdemedes/patch-console) 提供支持。因此，如果你希望禁用 Ink 的输出拦截并实现自定义方案，也可以直接使用该库。
 
 ###### onRender
 
-Type: `({renderTime: number}) => void`\
+Type: `({renderTime: number}) => void` 
 Default: `undefined`
 
-Runs the given callback after each render and re-render with render metrics.
-This callback runs after Ink commits a frame, but it does not wait for `stdout`/`stderr` stream callbacks.
-To run code after output is flushed, use [`waitUntilRenderFlush()`](#waituntilrenderflush).
+在每次渲染和重渲染后执行回调，并提供渲染指标。
+该回调在 Ink 提交一帧后执行，但不会等待 `stdout`/`stderr` 流回调完成。
+若要在输出真正 flush 后执行代码，请使用 [`waitUntilRenderFlush()`](#waituntilrenderflush)。
 
 ###### isScreenReaderEnabled
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `process.env['INK_SCREEN_READER'] === 'true'`
 
-Enable screen reader support. See [Screen Reader Support](#screen-reader-support).
+启用屏幕阅读器支持。见 [Screen Reader Support](#screen-reader-support)。
 
 ###### debug
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `false`
 
-If `true`, each update will be rendered as separate output, without replacing the previous one.
+若为 `true`，每次更新都会作为独立输出渲染，而不会替换上一帧。
 
 ###### maxFps
 
-Type: `number`\
+Type: `number` 
 Default: `30`
 
-Maximum frames per second for render updates.
-This controls how frequently the UI can update to prevent excessive re-rendering.
-Higher values allow more frequent updates but may impact performance.
-Setting it to a lower value may be useful for components that update very frequently, to reduce CPU usage.
+渲染更新的最大帧率（FPS）。
+用于控制 UI 的更新频率，防止过于频繁重渲染。
+更高值意味着更频繁更新，但可能影响性能。
+对于高频更新组件，适当降低此值可减少 CPU 占用。
 
 ###### incrementalRendering
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `false`
 
-Enable incremental rendering mode which only updates changed lines instead of redrawing the entire output.
-This can reduce flickering and improve performance for frequently updating UIs.
+启用增量渲染模式，仅更新变化的行，而不是重绘全部输出。
+这可减少闪烁，并提升高频更新 UI 的性能。
 
 ###### concurrent
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `false`
 
-Enable React Concurrent Rendering mode.
+启用 React 并发渲染模式。
 
-When enabled:
+启用后：
 
-- Suspense boundaries work correctly with async data fetching
-- `useTransition` and `useDeferredValue` hooks are fully functional
-- Updates can be interrupted for higher priority work
+- Suspense 边界能正确处理异步数据获取
+- `useTransition` 和 `useDeferredValue` Hook 完全可用
+- 更新可被更高优先级任务中断
 
 ```jsx
 render(<MyApp />, {concurrent: true});
 ```
 
 > [!NOTE]
-> Concurrent mode changes the timing of renders. Some tests may need to use `act()` to properly await updates. Reusing the same stdout across multiple `render()` calls without unmounting is unsupported. Call `unmount()` first if you need to change the rendering mode or create a fresh instance.
+> 并发模式会改变渲染时机。部分测试可能需要使用 `act()` 才能正确等待更新。未卸载时在同一个 stdout 上重复调用 `render()` 不受支持。若需切换渲染模式或创建新实例，请先调用 `unmount()`。
 
 ###### interactive
 
-Type: `boolean`\
-Default: `true` (`false` if in CI (detected via [`is-in-ci`](https://github.com/sindresorhus/is-in-ci)) or `stdout.isTTY` is falsy)
+Type: `boolean` 
+Default: `true`（在 CI 环境中（通过 [`is-in-ci`](https://github.com/sindresorhus/is-in-ci) 检测）或当 `stdout.isTTY` 为 falsy 时为 `false`）
 
-Override automatic interactive mode detection.
+覆盖自动交互模式检测。
 
-By default, Ink detects whether the environment is interactive based on CI detection and `stdout.isTTY`. When non-interactive, Ink skips terminal-specific features like ANSI erase sequences, cursor manipulation, synchronized output, resize handling, and kitty keyboard auto-detection. Only the final frame of non-static output is written at unmount.
+默认情况下，Ink 会基于 CI 检测和 `stdout.isTTY` 判断环境是否交互式。非交互式时，Ink 会跳过终端特有功能，例如 ANSI 擦除序列、光标控制、同步输出、窗口大小监听和 kitty keyboard 自动检测。非静态输出只会在卸载时写出最终帧。
 
-Most users should not need to set this option. Use it when you have your own "interactive" detection logic that differs from the built-in behavior.
+多数用户无需设置此选项。仅当你有一套与内置逻辑不同的交互判断策略时再使用。
 
 > [!NOTE]
-> Reusing the same stdout across multiple `render()` calls without unmounting is unsupported. Call `unmount()` first if you need to change this option or create a fresh instance.
+> 未卸载时在同一个 stdout 上重复调用 `render()` 不受支持。若需修改该选项或创建新实例，请先调用 `unmount()`。
 
 ```jsx
 // Use your own detection logic
@@ -2530,19 +2528,19 @@ render(<MyApp />, {interactive: isInteractive});
 
 ###### alternateScreen
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `false`
 
-Render the app in the terminal's alternate screen buffer. When enabled, the app renders on a separate screen, and the original terminal content is restored when the app exits. This is the same mechanism used by programs like vim, htop, and less.
+在终端的备用屏幕缓冲区渲染应用。启用后，应用会在独立屏幕中渲染，退出时恢复原有终端内容。这与 vim、htop、less 等程序使用的是同一机制。
 
-Note: The terminal's scrollback buffer is not available while in the alternate screen. This is standard terminal behavior; programs like vim use the alternate screen specifically to avoid polluting the user's scrollback history.
+注意：处于备用屏幕时，终端滚动回溯缓冲不可用。这是标准终端行为；像 vim 这类程序正是为了避免污染用户滚动历史才使用备用屏幕。
 
-Ink intentionally treats alternate-screen teardown output as disposable. It does not preserve or replay teardown-time frames, hook writes, or `console.*` output after restoring the primary screen.
+Ink 有意将备用屏幕卸载阶段输出视为可丢弃内容。恢复主屏幕后，它不会保留或重放卸载阶段帧、hook 写入或 `console.*` 输出。
 
-Only works in interactive mode. Ignored when `interactive` is `false` or in a non-interactive environment (CI, piped stdout).
+仅在交互模式下有效。若 `interactive` 为 `false` 或处于非交互环境（CI、stdout 被管道重定向），该选项会被忽略。
 
 > [!NOTE]
-> Reusing the same stdout across multiple `render()` calls without unmounting is unsupported. Call `unmount()` first if you need to change this option or create a fresh instance.
+> 未卸载时在同一个 stdout 上重复调用 `render()` 不受支持。若需修改该选项或创建新实例，请先调用 `unmount()`。
 
 ```jsx
 render(<MyApp />, {alternateScreen: true});
@@ -2550,10 +2548,10 @@ render(<MyApp />, {alternateScreen: true});
 
 ###### kittyKeyboard
 
-Type: `object`\
+Type: `object` 
 Default: `undefined`
 
-Enable the [kitty keyboard protocol](https://sw.kovidgoyal.net/kitty/keyboard-protocol/) for enhanced keyboard input handling. When enabled, terminals that support the protocol will report additional key information including `super`, `hyper`, `capsLock`, `numLock` modifiers and `eventType` (press/repeat/release).
+启用 [kitty keyboard protocol](https://sw.kovidgoyal.net/kitty/keyboard-protocol/) 以增强键盘输入处理。启用后，支持该协议的终端会报告更多按键信息，包括 `super`、`hyper`、`capsLock`、`numLock` 修饰键，以及 `eventType`（press/repeat/release）。
 
 ```jsx
 import {render} from 'ink';
@@ -2574,47 +2572,47 @@ render(<MyApp />, {
 
 **kittyKeyboard.mode**
 
-Type: `'auto' | 'enabled' | 'disabled'`\
+Type: `'auto' | 'enabled' | 'disabled'` 
 Default: `'auto'`
 
-- `'auto'`: Detect terminal support using a heuristic precheck (known terminals like kitty, WezTerm, Ghostty) followed by a protocol query confirmation (`CSI ? u`). The protocol is only enabled if the terminal responds to the query within a short timeout.
-- `'enabled'`: Force enable the protocol. Both stdin and stdout must be TTYs.
-- `'disabled'`: Never enable the protocol.
+- `'auto'`: 先用启发式预检查（已知终端如 kitty、WezTerm、Ghostty）再做协议查询确认（`CSI ? u`）。仅当终端在短超时内响应查询时才启用协议。
+- `'enabled'`: 强制启用协议。stdin 与 stdout 都必须是 TTY。
+- `'disabled'`: 永不启用协议。
 
 **kittyKeyboard.flags**
 
-Type: `string[]`\
+Type: `string[]` 
 Default: `['disambiguateEscapeCodes']`
 
-Protocol flags to request from the terminal. Pass an array of flag name strings.
+向终端请求的协议标志。传入标志名字符串数组。
 
-Available flags:
+可用标志：
 
-- `'disambiguateEscapeCodes'` - Disambiguate escape codes
-- `'reportEventTypes'` - Report key press, repeat, and release events
-- `'reportAlternateKeys'` - Report alternate key encodings
-- `'reportAllKeysAsEscapeCodes'` - Report all keys as escape codes
-- `'reportAssociatedText'` - Report associated text with key events
+- `'disambiguateEscapeCodes'` - 消除转义码歧义
+- `'reportEventTypes'` - 报告按键按下、重复和释放事件
+- `'reportAlternateKeys'` - 报告备用按键编码
+- `'reportAllKeysAsEscapeCodes'` - 将所有按键作为转义码上报
+- `'reportAssociatedText'` - 报告与按键事件关联的文本
 
 **Behavior notes**
 
-When the kitty keyboard protocol is enabled, input handling changes in several ways:
+启用 kitty keyboard 协议后，输入处理在多个方面会发生变化：
 
-- **Non-printable keys produce empty input.** Keys like function keys (F1-F35), modifier-only keys (Shift, Control, Super), media keys, Caps Lock, Print Screen, and similar keys will not produce any text in the `input` parameter of `useInput`. They can still be detected via the `key` object properties.
-- **Ctrl+letter shortcuts work as expected.** When the terminal sends `Ctrl+letter` as codepoint 1-26 (the kitty CSI-u alternate form), `input` is set to the letter name (e.g. `'c'` for `Ctrl+C`) and `key.ctrl` is `true`. This ensures `exitOnCtrlC` and custom `Ctrl+letter` handlers continue to work regardless of which codepoint form the terminal uses.
-- **Key disambiguation.** The protocol allows the terminal to distinguish between keys that normally produce the same escape sequence. For example:
-  - `Ctrl+I` vs `Tab` - without the protocol, both produce the same byte (`\x09`). With the protocol, they are reported as distinct keys.
-  - `Shift+Enter` vs `Enter` - the shift modifier is correctly reported.
-  - `Escape` key vs `Ctrl+[` - these are disambiguated.
-- **Event types.** With the `reportEventTypes` flag, key press, repeat, and release events are distinguished via `key.eventType`.
+- **非可打印键会产生空 input。** 功能键（F1-F35）、仅修饰键（Shift、Control、Super）、媒体键、Caps Lock、Print Screen 等不会在 `useInput` 的 `input` 参数中产生文本。但它们仍可通过 `key` 对象属性检测。
+- **Ctrl+字母快捷键行为正确。** 当终端将 `Ctrl+字母` 以 codepoint 1-26（kitty CSI-u 的 alternate form）发送时，`input` 会被设置为对应字母（例如 `Ctrl+C` 为 `'c'`），且 `key.ctrl` 为 `true`。这保证无论终端采用哪种 codepoint 形式，`exitOnCtrlC` 和自定义 `Ctrl+字母` 处理都可持续工作。
+- **按键去歧义。** 该协议允许终端区分通常会产生同一转义序列的按键。例如：
+  - `Ctrl+I` 与 `Tab` - 不使用协议时，两者都产生同一字节（` x09`）；使用协议后会被区分为不同按键。
+  - `Shift+Enter` 与 `Enter` - 可正确报告 shift 修饰键。
+  - `Escape` 键与 `Ctrl+[` - 可以被区分。
+- **事件类型。** 配合 `reportEventTypes` 标志，可通过 `key.eventType` 区分按下、重复与释放。
 
 #### renderToString(tree, options?)
 
 Returns: `string`
 
-Render a React element to a string synchronously. Unlike `render()`, this function does not write to stdout, does not set up any terminal event listeners, and returns the rendered output as a string.
+将 React 元素同步渲染为字符串。与 `render()` 不同，此函数不会写入 stdout，不会建立任何终端事件监听，并直接返回渲染结果字符串。
 
-Useful for generating documentation, writing output to files, testing, or any scenario where you need the rendered output as a string without starting a persistent terminal application.
+适用于生成文档、写文件、测试，或任何你需要字符串输出而不希望启动持久终端应用的场景。
 
 ```jsx
 import {renderToString, Text, Box} from 'ink';
@@ -2630,11 +2628,11 @@ console.log(output);
 
 **Notes:**
 
-- Terminal-specific hooks (`useInput`, `useStdin`, `useStdout`, `useStderr`, `useWindowSize`, `useApp`, `useFocus`, `useFocusManager`) return default no-op values since there is no terminal session. They will not throw, but they will not function as in a live terminal.
-- `useEffect` callbacks will execute during rendering (due to synchronous rendering mode), but state updates they trigger will not affect the returned output, which reflects the initial render.
-- `useLayoutEffect` callbacks fire synchronously during commit, so state updates they trigger **will** be reflected in the output.
-- The `<Static>` component is supported — its output is prepended to the dynamic output.
-- If a component throws during rendering, the error is propagated to the caller after cleanup.
+- 终端相关 Hook（`useInput`、`useStdin`、`useStdout`、`useStderr`、`useWindowSize`、`useApp`、`useFocus`、`useFocusManager`）会返回默认 no-op 值，因为此时没有终端会话。它们不会抛错，但行为不会与真实终端一致。
+- `useEffect` 回调会在渲染期间执行（由于同步渲染模式），但其触发的状态更新不会影响返回结果；返回值反映的是初始渲染。
+- `useLayoutEffect` 回调会在提交阶段同步执行，因此其触发的状态更新**会**反映到输出中。
+- `<Static>` 组件被支持，其输出会被前置到动态输出之前。
+- 若组件在渲染期间抛错，清理完成后错误会继续向调用方抛出。
 
 ##### tree
 
@@ -2646,10 +2644,10 @@ Type: `object`
 
 ###### columns
 
-Type: `number`\
+Type: `number` 
 Default: `80`
 
-Width of the virtual terminal in columns. Controls where text wrapping occurs.
+虚拟终端宽度（列数），用于控制文本换行位置。
 
 ```jsx
 const output = renderToString(<Text>{'A'.repeat(100)}</Text>, {
@@ -2660,11 +2658,11 @@ const output = renderToString(<Text>{'A'.repeat(100)}</Text>, {
 
 #### Instance
 
-This is the object that `render()` returns.
+这是 `render()` 返回的对象。
 
 ##### rerender(tree)
 
-Replace the previous root node with a new one or update the props of the current root node.
+用新的根节点替换旧根节点，或更新当前根节点的 props。
 
 ###### tree
 
@@ -2682,7 +2680,7 @@ rerender(<NewCounter />);
 
 ##### unmount()
 
-Manually unmount the whole Ink app.
+手动卸载整个 Ink 应用。
 
 ```jsx
 const {unmount} = render(<MyApp />);
@@ -2693,41 +2691,41 @@ unmount();
 
 Returns a promise that settles when the app is unmounted.
 
-It resolves with the value passed to `exit(value)` and rejects with the error passed to `exit(error)`.
-When `unmount()` is called manually, it settles after unmount-related stdout writes complete.
+它会以 `exit(value)` 传入的值 resolve，并在 `exit(error)` 传入错误时 reject。
+当手动调用 `unmount()` 时，它会在与卸载相关的 stdout 写入完成后才 settle。
 
 ```jsx
 const {unmount, waitUntilExit} = render(<MyApp />);
 
 setTimeout(unmount, 1000);
 
-await waitUntilExit(); // resolves after `unmount()` is called
+await waitUntilExit(); // 在调用 `unmount()` 后 resolve
 ```
 
 ##### waitUntilRenderFlush()
 
-Returns a promise that settles after pending render output is flushed to stdout.
+返回一个 Promise，会在待处理渲染输出刷新到 stdout 后 settle。
 
-Useful when you need to run code only after a frame is written:
+当你需要在某一帧真正写出后再运行代码时，这很有用：
 
 ```jsx
 const {rerender, waitUntilRenderFlush} = render(<MyApp step="loading" />);
 
 rerender(<MyApp step="ready" />);
-await waitUntilRenderFlush(); // output for "ready" is flushed
+await waitUntilRenderFlush(); // "ready" 对应输出已刷新
 
 runNextCommand();
 ```
 
 ##### cleanup()
 
-Unmount the current app and delete the internal Ink instance associated with the current `stdout`.
-This is mostly useful for advanced cases (for example, tests) where you need `render()` to create a fresh instance for the same stream.
-Unlike deleting the internal instance directly, this also tears down terminal state such as the alternate screen.
+卸载当前应用，并删除与当前 `stdout` 关联的内部 Ink 实例。
+这主要用于高级场景（例如测试），当你需要 `render()` 在同一流上创建全新实例时。
+与直接删除内部实例不同，该方法还会清理终端状态（例如备用屏幕）。
 
 ##### clear()
 
-Clear output.
+清空输出。
 
 ```jsx
 const {clear} = render(<MyApp />);
@@ -2736,19 +2734,19 @@ clear();
 
 #### measureElement(ref)
 
-Measure the dimensions of a particular `<Box>` element.
-Returns an object with `width` and `height` properties.
-This function is useful when your component needs to know the amount of available space it has. You can use it when you need to change the layout based on the length of its content.
+测量指定 `<Box>` 元素的尺寸。
+返回一个包含 `width` 和 `height` 属性的对象。
+当组件需要获知可用空间大小时，这个函数非常有用。你可以在需要根据内容长度调整布局时使用它。
 
 > [!NOTE]
-> `measureElement()` returns `{width: 0, height: 0}` when called during render (before layout is calculated). Call it from post-render code, such as `useEffect`, `useLayoutEffect`, input handlers, or timer callbacks. When content changes, pass the relevant dependency to your effect so it re-measures after each update.
+> 在渲染期间（布局尚未计算完成前）调用 `measureElement()` 会返回 `{width: 0, height: 0}`。请在渲染后代码中调用它，例如 `useEffect`、`useLayoutEffect`、输入处理器或定时器回调。当内容变化时，请把相关依赖传给 effect，以便每次更新后重新测量。
 
 ##### ref
 
 Type: `MutableRef`
 
-A reference to a `<Box>` element captured with the `ref` property.
-See [Refs](https://reactjs.org/docs/refs-and-the-dom.html) for more information on how to capture references.
+通过 `ref` 属性获取到的 `<Box>` 元素引用。
+关于如何获取引用，见 [Refs](https://reactjs.org/docs/refs-and-the-dom.html)。
 
 ```jsx
 import {render, measureElement, Box, Text} from 'ink';
@@ -2775,8 +2773,8 @@ render(<Example />);
 
 ## Testing
 
-Ink components are simple to test with [ink-testing-library](https://github.com/vadimdemedes/ink-testing-library).
-Here's a simple example that checks how the component is rendered:
+使用 [ink-testing-library](https://github.com/vadimdemedes/ink-testing-library) 可以非常方便地测试 Ink 组件。
+下面是一个简单示例，用于检查组件渲染结果：
 
 ```jsx
 import React from 'react';
@@ -2789,45 +2787,46 @@ const {lastFrame} = render(<Test />);
 lastFrame() === 'Hello World'; //=> true
 ```
 
-Check out [ink-testing-library](https://github.com/vadimdemedes/ink-testing-library) for more examples and full documentation.
+更多示例和完整文档请查看 [ink-testing-library](https://github.com/vadimdemedes/ink-testing-library)。
 
 ## Using React Devtools
 
 ![](media/devtools.jpg)
 
-Ink supports [React Devtools](https://github.com/facebook/react/tree/master/packages/react-devtools) out of the box. To enable integration with React Devtools in your Ink-based CLI, first ensure you have installed the optional `react-devtools-core` dependency, and then run your app with the `DEV=true` environment variable:
+Ink 原生支持 [React Devtools](https://github.com/facebook/react/tree/master/packages/react-devtools)。
+要在基于 Ink 的 CLI 中启用 React Devtools 集成，请先确保安装可选依赖 `react-devtools-core`，然后通过 `DEV=true` 环境变量运行你的应用：
 
 ```sh
 DEV=true my-cli
 ```
 
-Then, start React Devtools itself:
+然后启动 React Devtools：
 
 ```sh
 npx react-devtools
 ```
 
-After it starts, you should see the component tree of your CLI.
-You can even inspect and change the props of components, and see the results immediately in the CLI, without restarting it.
+启动后，你应能看到 CLI 的组件树。
+你甚至可以检查并修改组件 props，并立即在 CLI 中看到效果，无需重启。
 
 > [!NOTE]
-> You must manually quit your CLI via <kbd>Ctrl</kbd>+<kbd>C</kbd> after you're done testing.
+> 测试结束后，你需要通过 <kbd>Ctrl</kbd>+<kbd>C</kbd> 手动退出 CLI。
 
 ## Screen Reader Support
 
-Ink has basic support for screen readers.
+Ink 提供了基础的屏幕阅读器支持。
 
-To enable it, you can either pass the `isScreenReaderEnabled` option to the `render` function or set the `INK_SCREEN_READER` environment variable to `true`.
+要启用它，你可以向 `render` 函数传入 `isScreenReaderEnabled` 选项，或将环境变量 `INK_SCREEN_READER` 设为 `true`。
 
-Ink implements a small subset of functionality from the [ARIA specification](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA).
+Ink 实现了 [ARIA 规范](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) 的一小部分能力。
 
 ```jsx
 render(<MyApp />, {isScreenReaderEnabled: true});
 ```
 
-When screen reader support is enabled, Ink will try its best to generate a screen-reader-friendly output.
+启用屏幕阅读器支持后，Ink 会尽可能生成对屏幕阅读器友好的输出。
 
-For example, for this code:
+例如，对于以下代码：
 
 ```jsx
 <Box aria-role="checkbox" aria-state={{checked: true}}>
@@ -2835,15 +2834,15 @@ For example, for this code:
 </Box>
 ```
 
-Ink will generate the following output for screen readers:
+Ink 会为屏幕阅读器生成如下输出：
 
 ```
 (checked) checkbox: Accept terms and conditions
 ```
 
-You can also provide a custom label for screen readers if you want to render something different for them.
+如果你希望给屏幕阅读器展示不同内容，也可以提供自定义标签。
 
-For example, if you are building a progress bar, you can use `aria-label` to provide a more descriptive label for screen readers.
+例如，在构建进度条时，可以使用 `aria-label` 为屏幕阅读器提供更具描述性的标签。
 
 ```jsx
 <Box>
@@ -2852,28 +2851,28 @@ For example, if you are building a progress bar, you can use `aria-label` to pro
 </Box>
 ```
 
-In the example above, the screen reader will read "Progress: 50%" instead of "50%".
+在上面的示例中，屏幕阅读器会读出 "Progress: 50%"，而不是 "50%"。
 
 ### `aria-label`
 
 Type: `string`
 
-A label for the element for screen readers.
+元素的屏幕阅读器标签。
 
 ### `aria-hidden`
 
-Type: `boolean`\
+Type: `boolean` 
 Default: `false`
 
-Hide the element from screen readers.
+对屏幕阅读器隐藏该元素。
 
 ##### aria-role
 
 Type: `string`
 
-The role of the element.
+元素角色。
 
-Supported values:
+支持值：
 
 - `button`
 - `checkbox`
@@ -2894,9 +2893,9 @@ Supported values:
 
 Type: `object`
 
-The state of the element.
+元素状态。
 
-Supported values:
+支持值：
 
 - `checked` (boolean)
 - `disabled` (boolean)
@@ -2905,85 +2904,85 @@ Supported values:
 
 ## Creating Components
 
-When building custom components, it's important to keep accessibility in mind. While Ink provides the building blocks, ensuring your components are accessible will make your CLIs usable by a wider audience.
+在构建自定义组件时，务必重视可访问性。虽然 Ink 提供了构建基础能力，但确保组件可访问，能让更广泛的用户群体使用你的 CLI。
 
 ### General Principles
 
-- **Provide screen reader-friendly output:** Use the `useIsScreenReaderEnabled` hook to detect if a screen reader is active. You can then render more descriptive output for screen reader users.
-- **Leverage ARIA props:** For components that have a specific role (e.g., a checkbox or button), use the `aria-role`, `aria-state`, and `aria-label` props on `<Box>` and `<Text>` to provide semantic meaning to screen readers.
+- **提供对屏幕阅读器友好的输出：** 使用 `useIsScreenReaderEnabled` Hook 检测屏幕阅读器是否启用，然后为其用户渲染更具描述性的输出。
+- **善用 ARIA 属性：** 对具有明确角色的组件（例如复选框或按钮），在 `<Box>` 与 `<Text>` 上使用 `aria-role`、`aria-state` 和 `aria-label` 属性，为屏幕阅读器提供语义信息。
 
-For a practical example of building an accessible component, see the [ARIA example](/examples/aria/aria.tsx).
+一个构建可访问组件的实践示例见 [ARIA example](/examples/aria/aria.tsx)。
 
 ## Useful Components
 
-- [ink-text-input](https://github.com/vadimdemedes/ink-text-input) - Text input.
-- [ink-spinner](https://github.com/vadimdemedes/ink-spinner) - Spinner.
-- [ink-select-input](https://github.com/vadimdemedes/ink-select-input) - Select (dropdown) input.
-- [ink-link](https://github.com/sindresorhus/ink-link) - Link.
-- [ink-gradient](https://github.com/sindresorhus/ink-gradient) - Gradient color.
-- [ink-big-text](https://github.com/sindresorhus/ink-big-text) - Awesome text.
-- [ink-picture](https://github.com/endernoke/ink-picture) - Display images.
-- [ink-tab](https://github.com/jdeniau/ink-tab) - Tab.
-- [ink-color-pipe](https://github.com/LitoMore/ink-color-pipe) - Create color text with simpler style strings.
-- [ink-multi-select](https://github.com/karaggeorge/ink-multi-select) - Select one or more values from a list
-- [ink-divider](https://github.com/JureSotosek/ink-divider) - A divider.
-- [ink-progress-bar](https://github.com/brigand/ink-progress-bar) - Progress bar.
-- [ink-table](https://github.com/maticzav/ink-table) - Table.
-- [ink-ascii](https://github.com/hexrcs/ink-ascii) - Awesome text component with more font choices, based on Figlet.
-- [ink-markdown](https://github.com/cameronhunter/ink-markdown) - Render syntax highlighted Markdown.
-- [ink-quicksearch-input](https://github.com/Eximchain/ink-quicksearch-input) - Select component with fast, quicksearch-like navigation.
-- [ink-confirm-input](https://github.com/kevva/ink-confirm-input) - Yes/No confirmation input.
-- [ink-syntax-highlight](https://github.com/vsashyn/ink-syntax-highlight) - Code syntax highlighting.
-- [ink-form](https://github.com/lukasbach/ink-form) - Form.
-- [ink-task-list](https://github.com/privatenumber/ink-task-list) - Task list.
-- [ink-spawn](https://github.com/kraenhansen/ink-spawn) - Spawn child processes.
-- [ink-titled-box](https://github.com/mishieck/ink-titled-box) - Box with a title.
-- [ink-chart](https://github.com/pppp606/ink-chart) - Sparkline and bar chart.
-- [ink-scroll-view](https://github.com/ByteLandTechnology/ink-scroll-view) - Scroll container.
-- [ink-scroll-list](https://github.com/ByteLandTechnology/ink-scroll-list) - Scrollable list.
-- [ink-stepper](https://github.com/archcorsair/ink-stepper) - Step-by-step wizard.
-- [ink-virtual-list](https://github.com/archcorsair/ink-virtual-list) - Virtualized list that renders only visible items for performance.
-- [ink-color-picker](https://github.com/sina-byn/ink-color-picker) - Color picker.
+- [ink-text-input](https://github.com/vadimdemedes/ink-text-input) - 文本输入。
+- [ink-spinner](https://github.com/vadimdemedes/ink-spinner) - 加载旋转器。
+- [ink-select-input](https://github.com/vadimdemedes/ink-select-input) - 选择（下拉）输入。
+- [ink-link](https://github.com/sindresorhus/ink-link) - 链接。
+- [ink-gradient](https://github.com/sindresorhus/ink-gradient) - 渐变色。
+- [ink-big-text](https://github.com/sindresorhus/ink-big-text) - 艺术大字。
+- [ink-picture](https://github.com/endernoke/ink-picture) - 显示图片。
+- [ink-tab](https://github.com/jdeniau/ink-tab) - 标签页。
+- [ink-color-pipe](https://github.com/LitoMore/ink-color-pipe) - 用更简洁的样式字符串创建彩色文本。
+- [ink-multi-select](https://github.com/karaggeorge/ink-multi-select) - 从列表中选择一个或多个值
+- [ink-divider](https://github.com/JureSotosek/ink-divider) - 分隔线。
+- [ink-progress-bar](https://github.com/brigand/ink-progress-bar) - 进度条。
+- [ink-table](https://github.com/maticzav/ink-table) - 表格。
+- [ink-ascii](https://github.com/hexrcs/ink-ascii) - 基于 Figlet、支持更多字体选择的艺术字组件。
+- [ink-markdown](https://github.com/cameronhunter/ink-markdown) - 渲染带语法高亮的 Markdown。
+- [ink-quicksearch-input](https://github.com/Eximchain/ink-quicksearch-input) - 带快速搜索导航的选择组件。
+- [ink-confirm-input](https://github.com/kevva/ink-confirm-input) - Yes/No 确认输入。
+- [ink-syntax-highlight](https://github.com/vsashyn/ink-syntax-highlight) - 代码语法高亮。
+- [ink-form](https://github.com/lukasbach/ink-form) - 表单。
+- [ink-task-list](https://github.com/privatenumber/ink-task-list) - 任务列表。
+- [ink-spawn](https://github.com/kraenhansen/ink-spawn) - 启动子进程。
+- [ink-titled-box](https://github.com/mishieck/ink-titled-box) - 带标题的 Box。
+- [ink-chart](https://github.com/pppp606/ink-chart) - 火花线与柱状图。
+- [ink-scroll-view](https://github.com/ByteLandTechnology/ink-scroll-view) - 滚动容器。
+- [ink-scroll-list](https://github.com/ByteLandTechnology/ink-scroll-list) - 可滚动列表。
+- [ink-stepper](https://github.com/archcorsair/ink-stepper) - 分步向导。
+- [ink-virtual-list](https://github.com/archcorsair/ink-virtual-list) - 仅渲染可见项的虚拟列表，以提升性能。
+- [ink-color-picker](https://github.com/sina-byn/ink-color-picker) - 颜色选择器。
 
 ## Useful Hooks
 
-- [ink-use-stdout-dimensions](https://github.com/cameronhunter/ink-monorepo/tree/master/packages/ink-use-stdout-dimensions) - Subscribe to stdout dimensions.
+- [ink-use-stdout-dimensions](https://github.com/cameronhunter/ink-monorepo/tree/master/packages/ink-use-stdout-dimensions) - 订阅 stdout 尺寸。
 
 ## Recipes
 
-- [Routing with React Router](recipes/routing.md) - Navigate between routes using `MemoryRouter`.
+- [Routing with React Router](recipes/routing.md) - 使用 `MemoryRouter` 在路由间导航。
 
 ## Examples
 
-The [`examples`](/examples) directory contains a set of real examples. You can run them with:
+[`examples`](/examples) 目录包含一组真实示例。可通过以下命令运行：
 
 ```bash
 npm run example examples/[example name]
 # e.g. npm run example examples/borders
 ```
 
-- [Jest](examples/jest/jest.tsx) - Implementation of basic Jest UI.
-- [Counter](examples/counter/counter.tsx) - A simple counter that increments every 100ms.
-- [Form with validation](https://github.com/final-form/rff-cli-example) - Manage form state using [Final Form](https://github.com/final-form/final-form#-final-form).
-- [Borders](examples/borders/borders.tsx) - Add borders to the `<Box>` component.
-- [Suspense](examples/suspense/suspense.tsx) - Use React Suspense.
-- [Table](examples/table/table.tsx) - Renders a table with multiple columns and rows.
-- [Focus management](examples/use-focus/use-focus.tsx) - Use the `useFocus` hook to manage focus between components.
-- [User input](examples/use-input/use-input.tsx) - Listen for user input.
-- [Write to stdout](examples/use-stdout/use-stdout.tsx) - Write to stdout, bypassing main Ink output.
-- [Write to stderr](examples/use-stderr/use-stderr.tsx) - Write to stderr, bypassing main Ink output.
-- [Static](examples/static/static.tsx) - Use the `<Static>` component to render permanent output.
-- [Child process](examples/subprocess-output) - Renders output from a child process.
-- [Router](examples/router/router.tsx) - Navigate between routes using React Router's `MemoryRouter`.
+- [Jest](examples/jest/jest.tsx) - 基础 Jest UI 实现。
+- [Counter](examples/counter/counter.tsx) - 每 100ms 递增一次的简单计数器。
+- [Form with validation](https://github.com/final-form/rff-cli-example) - 使用 [Final Form](https://github.com/final-form/final-form#-final-form) 管理表单状态。
+- [Borders](examples/borders/borders.tsx) - 为 `<Box>` 组件添加边框。
+- [Suspense](examples/suspense/suspense.tsx) - 使用 React Suspense。
+- [Table](examples/table/table.tsx) - 渲染多列多行表格。
+- [Focus management](examples/use-focus/use-focus.tsx) - 使用 `useFocus` Hook 管理组件间焦点。
+- [User input](examples/use-input/use-input.tsx) - 监听用户输入。
+- [Write to stdout](examples/use-stdout/use-stdout.tsx) - 写入 stdout，绕过 Ink 主输出。
+- [Write to stderr](examples/use-stderr/use-stderr.tsx) - 写入 stderr，绕过 Ink 主输出。
+- [Static](examples/static/static.tsx) - 使用 `<Static>` 组件渲染永久输出。
+- [Child process](examples/subprocess-output) - 渲染子进程输出。
+- [Router](examples/router/router.tsx) - 使用 React Router 的 `MemoryRouter` 在路由间导航。
 
 ## Continuous Integration
 
-When running on CI (detected via the `CI` environment variable), Ink adapts its rendering:
+在 CI 环境中运行时（通过 `CI` 环境变量检测），Ink 会调整其渲染行为：
 
-- Only the last frame is rendered on exit, instead of continuously updating the terminal. This is because most CI environments don't support the ANSI escape sequences used to overwrite previous output.
-- Terminal resize events are not listened to.
+- 退出时仅渲染最后一帧，而不是持续更新终端。这是因为多数 CI 环境不支持用于覆盖先前输出的 ANSI 转义序列。
+- 不监听终端尺寸变化事件。
 
-If your CI environment supports full terminal rendering and you want to opt out of this behavior, set `CI=false`:
+如果你的 CI 环境支持完整终端渲染，并且你希望禁用上述行为，请设置 `CI=false`：
 
 ```sh
 CI=false node my-cli.js
